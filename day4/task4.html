@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables And Forms</title>
+    <style>
+        body{
+            background-color: rgb(231, 236, 242);
+        }
+        table, th, td{
+            border: 2px;
+            border-color: black;
+            border-style:solid;
+            border-collapse: collapse;
+            width: 900px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Registration Form</h1>
+    <form action="submit" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" style="width: 500px; padding: 10px;border-radius: 10px;"><br><br>
+        <label for="num">Roll Number:</label><br>
+        <input type="number" id="num" name="num" placeholder="Enter your roll number" style="width: 500px; padding: 10px; border-radius: 10px;"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" style="width: 500px; padding: 10px; border-radius: 10px;"> <br><br>
+        <label for="department">Select Department:</label><br>
+
+        <select id="department" name="department">
+            <option value="Select Department">Select Department</option>
+            <option value="ECE">ECE</option>
+            <option value="CSE">CSE</option>
+            <option value="CIVIL">CIVIL</option>
+            <option value="MECH">MECH</option>
+            <option value="EEE">EEE</option>
+        </select>
+
+        <p>Year of study:</p>
+        <input type="radio" id="first" name="fav_language" value="first">
+        <label for="first">1st</label>
+        <input type="radio" id="second" name="fav_language" value="second">
+        <label for="second">2nd</label>
+        <input type="radio" id="third" name="fav_language" value="third">
+        <label for="third">3rd</label>
+        <input type="radio" id="fourth" name="fav_language" value="fourth">
+        <label for="fourth">4th</label><br><br>
+        <p>Selected Courses:</p>
+        <label for="selected">HTML</label>
+        <input type="checkbox" id="selected" name="selected" >
+        <label for="selected">CSS</label>
+        <input type="checkbox" id="selected" name="selected" >
+        <label for="selected">Javascript</label>
+        <input type="checkbox" id="selected" name="selected" >
+        <label for="selected">Python</label>
+        <input type="checkbox" id="selected" name="selected" >
+        <label for="selected">Java</label>
+        <input type="checkbox" id="selected" name="selected" ><br><br>
+        <label for="file">upload resume:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="enter the message......"></textarea><br>
+        
+        <input type="checkbox" id="selected" name="selected" >
+        <label for="selected">I agree to the terms and conditions</label><br><br>
+        <button type="submit" style="background: green; border-radius: 6px;">Submit</button>
+        <button type="submit" style="background: red; border-radius: 6px;">Reset</button>
+        
+
+
+
+
+
+
+ </form><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+ <!--Tablessss-->
+<h2 style="text-align: left;">Table</h2>
+
+ <table>
+
+
+    <thead>
+    <tr>
+        <th style="width=100" height="100">
+            Name
+        </th>
+        <th>
+            Roll Number
+        </th>
+        <th>
+            Department
+        </th>
+        <th>
+            Year
+        </th>
+        <th>
+            Selected Course
+        </th>
+        <th>Email</th>
+        <th>Photo</th>
+
+    </tr>
+
+</thead>
+
+<tbody>
+    <tr style="background-color: rgb(152, 163, 159);">
+        <td style="text-align: center;"><em>Varun</em></td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">CSE</td>
+        <td style="text-align: center;">2025</td>
+        <td style="text-align: center;">python</td>
+        <td style="text-align: center;">varun@email.com</td>
+        <td style="text-align: center;"><img src="./WhatsApp_Image_2025-10-28_at_3.43.13_PM-removebg-preview.png" wdith="100" height="100"></td>
+        
+    </tr>
+    <tr>
+        <td style="text-align: center;"><em>Rudeved</em></td>
+        <td style="text-align: center;">2</td>
+        <td style="text-align: center;">ECE</td>
+        <td style="text-align: center;">2025</td>
+        <td style="text-align: center;">Java</td>
+        <td style="text-align: center;">rudved@email.com</td>
+        <td style="text-align: center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWKCxmwapSpC9TZ4M2VHZ3ec4t3rVvbUVtPA&s" width="100" height="100"></td>
+        
+    </tr>
+    <tr style="background-color: rgb(152, 163, 159);">
+        <td style="text-align: center;"><em>Roshan</em></td>
+        <td style="text-align: center;">3</td>
+        <td style="text-align: center;">CSE</td>
+        <td style="text-align: center;">2025</td>
+        <td style="text-align: center;">Html</td>
+        <td style="text-align: center;">roshan@email.com</td>
+        <td style="text-align: center;"><img src="https://as2.ftcdn.net/jpg/02/90/27/39/1000_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.webp" width="100" height="100" alt="roshan"></td>
+        
+    </tr>
+    <tr>
+        <td style="text-align: center;"><em>Suhas</em></td>
+        <td style="text-align: center;">4</td>
+        <td style="text-align: center;">CIVIL</td>
+        <td style="text-align: center;">2025</td>
+        <td style="text-align: center;">Css</td>
+        <td style="text-align: center;">suhas@email.com</td>
+        <td style="text-align: center;"><img src="https://t4.ftcdn.net/jpg/02/10/58/41/240_F_210584153_3xJp8jpNUq370k9BZg9SyNAMMZt2DgJ7.jpg" width="100" height="100"></td>
+        
+    </tr>
+    <tr style="background-color: rgb(152, 163, 159);">
+        <td style="text-align: center;"><em>Anand</em></td>
+        <td style="text-align: center;">5</td>
+        <td style="text-align: center;">EEE</td>
+        <td style="text-align: center;">2025</td>
+        <td style="text-align: center;">Javascript</td>
+        <td style="text-align: center;">anand@email.com</td>
+        <td style="text-align: center;"><img src="https://t3.ftcdn.net/jpg/11/75/74/94/240_F_1175749488_d5yk3nIagTlrKFmQ7QoISCZKfmdHc8Wj.jpg" width="100" height="100"></td>
+        
+    </tr>
+    <tr>
+        <td style="text-align: center;"><i>Rohan</i></td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;">CIVIL</td>
+        <td style="text-align: center;">2025</td>
+        <td style="text-align: center;">C++</td>
+        <td style="text-align: center;">rohan@email.com</td>
+        <td style="text-align: center;"><img src="https://t3.ftcdn.net/jpg/03/96/26/70/240_F_396267037_OjMqw1CUZZkFJO66bugxuq1I6B8npHB4.jpg" width="100" height="100"></td>
+        
+    </tr>
+    <tr style="background-color: rgb(152, 163, 159);">
+        <td style="text-align: center;"><i>Hafeez</i></td>
+        <td style="text-align: center;">7</td>
+        <td style="text-align: center;">MECH</td>
+        <td style="text-align: center;">2025</td>
+        <td style="text-align: center;">python</td>
+        <td style="text-align: center;">hafeez@email.com</td>
+        <td style="text-align: center;"><img src="https://t4.ftcdn.net/jpg/05/86/07/29/240_F_586072952_aN7GB5yRKxaznFQX512KUMNAguJLpbrp.jpg" width="100" height="100"></td>
+        
+    </tr>
+    <tr>
+        <td style="text-align: center;"><i>Mahadev</i></td>
+        <td style="text-align: center;">8</td>
+        <td style="text-align: center;">CSE</td>
+        <td style="text-align: center;">2025</td>
+        <td style="text-align: center;">SQL</td>
+        <td style="text-align: center;">mahadev@email.com</td>
+        <td style="text-align: center;"><img src="https://t4.ftcdn.net/jpg/02/71/29/17/240_F_271291754_24AlHvAGK6UjfpQDjY6RTBj8eGUfXS0Q.jpg" width="100" height="100"></td>
+        
+    </tr>
+    <tr style="background-color: rgb(152, 163, 159);">
+        <td style="text-align: center;"><i>Tarun</i></td>
+        <td style="text-align: center;">9</td>
+        <td style="text-align: center;">ECE</td>
+        <td style="text-align: center;">2025</td>
+        <td style="text-align: center;">C#</td>
+        <td style="text-align: center;">tarun@email.com</td>
+        <td style="text-align: center;"><img src="https://t4.ftcdn.net/jpg/07/92/37/17/240_F_792371799_SYRZRLqm9r1jK36rfF6I2CwA1VR4Ele0.jpg" width="100" height="100"></td>
+        
+    </tr>
+    <tr>
+        <td style="text-align: center;"><i>Sai</i></td>
+        <td style="text-align: center;">10</td>
+        <td style="text-align: center;">EEE</td>
+        <td style="text-align: center;">2025</td>
+        <td style="text-align: center;">python</td>
+        <td style="text-align: center;">sai@email.com</td>
+        <td style="text-align: center;"><img src="https://t3.ftcdn.net/jpg/06/02/18/62/240_F_602186218_fpYxVU19SUIV1IFYU6g144NBh28dWeFY.jpg" width="100" height="100"></td>
+        
+    </tr>
+
+</tbody>
+ </table>
+</body>
+</html>
