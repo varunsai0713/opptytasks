@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;              
+    padding: 20px 40px;
+    background-color: #1a0792;        
+    background: linear-gradient(to bottom, blue, white);
+    
+}
+
+.logo h1 {
+    color: white;
+    
+    
+}
+.menu {
+    display: flex;
+    gap: 20px;   
+    
+                       
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+p{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(159, 26, 179);
+    
+}
+
+:root{
+    background-color:lightsteelblue;
+}
+
+
+
+
+
+
