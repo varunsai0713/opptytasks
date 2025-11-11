@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    box-sizing:content-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero {
+    background: linear-gradient(#0d4fa3, #adc0d8);
+    color: white;
+    padding: 20px 60px;
+    height: 100vh;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style:none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login {
+    color: white;
+    text-decoration: none;
+}
+
+.join-btn {
+    background: #1fa3ff;
+    padding: 8px 18px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.hero-content {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.welcome {
+    color: #8ec5ff;
+    margin-bottom: 8px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.subtext {
+    color: #e0e8ff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.hero-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-primary {
+    background: #1fa3ff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-outline {
+    border: 2px solid #7fbaff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+}
