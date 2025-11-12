@@ -1,0 +1,231 @@
+h1{
+    color: rgb(22, 113, 216);
+    text-align: center;
+    border-bottom: 2px solid rgb(216, 80, 22);
+    padding-bottom: 20px;
+    padding-top: 15px;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dddcdc;
+   
+}
+p {
+    color: #9d085c;
+    
+    
+}
+.container{
+    background-color: #c3c1ae;
+    padding: 5px;
+}
+h2{
+    color: orange;
+}
+.button button{
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s; 
+}
+.button button:hover {
+  background-color: #5fb8f3;   
+  transform: scale(1.05);      
+}
+#same-color{
+    color:orange
+}
+h4 {
+    color: orange;
+}
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.button1 button{
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s; 
+    gap: 50px;
+}
+.button1 button:hover {
+  background-color: #5fb8f3;   
+  transform: scale(1.05);      
+}
+
+.named-colors {
+    background-color: lightblue;
+    color: darkblue;
+    border: 2px solid navy;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.hex-colors {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    border: 2px solid #ee5a24;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.rgb-colors {
+    background-color: rgb(106, 127, 234);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(70, 90, 200);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.rgba-colors {
+    background-color: rgba(255, 107, 107, 0.7);
+    color: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(238, 90, 36, 0.9);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.hsl-colors {
+    background-color: hsl(270, 60%, 70%);
+    color: hsl(0, 0%, 20%);
+    border: 2px solid hsl(270, 60%, 50%);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.hsla-colors {
+    background-color: hsla(120, 100%, 50%, 0.6);
+    color: hsla(0, 0%, 0%, 0.9);
+    border: 2px solid hsla(120, 100%, 30%, 0.8);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.transparent-example {
+    background-color: transparent;
+    color: #ff6b6b;
+    border: 2px solid currentColor;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.gradient-example {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24, #333);
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: left;
+    font-weight: bold;
+    padding-top: 10;
+    padding-bottom:5;
+    
+}
+.box {
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    padding-top: 10;
+    padding-bottom:5;
+    
+}
+
+
+.bg-color { 
+    background-color: #ff6b6b; 
+}
+.bg-image { 
+    background-color: #4ecdc4; 
+}
+.bg-repeat { 
+    background-color: #1dd1a1; 
+}
+.bordcol{
+    color: plum;
+}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+
+p.two {
+  border-style: solid;
+  border-width: medium;
+}
+
+p.three {
+  border-style: dotted;
+  border-width: 2px;
+}
+
+p.four {
+  border-style: dotted;
+  border-width: thick;
+}
+
+p.five {
+  border-style: double;
+  border-width: 15px;
+}
+
+p.six {
+  border-style: double;
+  border-width: thick;
+}
+p.one {
+  border-style: solid;
+  border-color: red;
+}
+
+p.two {
+  border-style: solid;
+  border-color: green;
+} 
+
+p.three {
+  border-style: dotted;
+  border-color: blue;
+} 
+
+
