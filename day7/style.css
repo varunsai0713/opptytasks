@@ -9,6 +9,8 @@
     color: white;
     padding: 20px 60px;
     height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
 }
 
 
@@ -102,3 +104,4 @@
     color: #ffffff;
     text-decoration: none;
 }
+
