@@ -8,14 +8,15 @@
 }
 
 .btn-html {
-    color: #0628af;
-    background-color: #f7ebf1;
+    color: #f3f4f8;
+    background-color: #d653c7;
     border-radius: 100px;
-    font-size: 1.2em;
     padding: 10px 20px;
     text-decoration: none;
     transition: 0.3s;
     display:inline-block; 
+    margin-right: 100px;
+    
     
    
 }
@@ -25,14 +26,15 @@
     justify-content: left;
 }
 .btn-css {
-    color: #0628af;
-    background-color: #f7ebf1;
+    color: #f3f4f8;
+    background-color: #d653c7;
     border-radius: 100px;
-    font-size: 1.2em;
     padding: 10px 20px;
     text-decoration: none;
     transition: 0.3s;
     display:inline-block; 
+    margin-left: 100px;
+
 }
 .css :hover{
     transform: scale(1.05);   
