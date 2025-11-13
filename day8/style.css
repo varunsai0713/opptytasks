@@ -29,13 +29,13 @@ h2{
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 16px;
     transition: 0.3s; 
 }
 .button button:hover {
-  background-color: #5fb8f3;   
-  transform: scale(1.05);      
+  background-color: #5fb8f3;
+  transform: scale(1.05);   
+      
 }
 #same-color{
     color:orange
@@ -63,7 +63,8 @@ h4 {
 }
 .button1 button:hover {
   background-color: #5fb8f3;   
-  transform: scale(1.05);      
+  transform: scale(1.05); 
+  gap: 20px; 
 }
 
 .named-colors {
@@ -166,9 +167,12 @@ h4 {
 }
 .bg-image { 
     background-color: #4ecdc4; 
+    background-image: url("https://media.istockphoto.com/id/486755202/photo/torrent.jpg?s=612x612&w=0&k=20&c=sgaOAV2v--UZJq4K0ogph_5sAhwJ7IHSV8jgRFZoXbQ=");
 }
 .bg-repeat { 
     background-color: #1dd1a1; 
+    background-image: url("https://media.istockphoto.com/id/486755202/photo/torrent.jpg?s=612x612&w=0&k=20&c=sgaOAV2v--UZJq4K0ogph_5sAhwJ7IHSV8jgRFZoXbQ=");
+    background-repeat: repeat-y;
 }
 .bordcol{
     color: plum;
