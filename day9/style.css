@@ -57,8 +57,8 @@
 .container1:hover{
     box-shadow: 20px 20px 10px rgb(232, 225, 225);
     transition: 0.3s;
-    transform: scaleX(1.05);
-    background-color: rgb(191, 200, 220);
+    transform: scale(1.05);
+    background-color: rgb(191, 200, 220 );
 }
 .container2{
     height: 150px;
@@ -72,12 +72,13 @@
 .container2:hover{
     box-shadow: 20px 20px 10px rgb(232, 225, 225);
     transition: 0.3s;
-    transform: scaleX(1.05);
+    transform: scale(1.05);
     background-color: rgb(191, 200, 220);
 }
 .flex{
     display: flex;
     gap: 200px;
+
 }
     
     
