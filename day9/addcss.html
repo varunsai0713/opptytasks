@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add css</title>
+    <style>
+        header {
+            background-color: rgb(179, 223, 223);
+            padding: 30px;
+        }
+        .add{
+            background-color: aliceblue;
+        }
+        .back{
+            padding: 10px;
+            margin-top: 5px;
+            background: #667eea;
+            color: white;
+            margin-top: 30px;
+            border-radius: 10px;
+            margin-left: 10px;
+           
+        }
+        .back:hover{
+            cursor:pointer;
+            background-color: rgb(180, 33, 153);
+            transform: scale(1.1);
+        }
+         
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; color: rgb(81, 67, 109)">
+            Introduction to Inline, Internal, External
+        </h1>
+        <h3 style="text-align: center; color: rgb(3, 56, 56)">
+            Learn  Introduction to Three CSS 
+        </h3>
+    </header>
+    <div class="add">
+    <h2>How to Add CSS</h2>
+    <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+    <p>There are three ways of inserting a style sheet:</p>
+    <ul>
+        <li>External CSS</li>
+        <li>Internal CSS</li>
+        <li>Inline CSS</li>
+    </ul>
+    <h2>External CSS</h2>
+<p>External CSS is written in a separate .css file and linked to the HTML document using the <b>&lt;link&gt;</b> tag inside the <b>&lt;head&gt;</b> section. This method allows you to use the same CSS file for multiple HTML pages, making your website easier to maintain. It keeps HTML and CSS separate, which is a good practice for larger websites. Example: <b>&lt;link rel="stylesheet" href="style.css"&gt;</b>.</p>
+
+<h2>Internal CSS</h2>
+<p>Internal CSS is written inside a <b>&lt;style&gt;</b> tag within the <b>&lt;head&gt;</b> section of the HTML document. This method is useful for styling a single page or for testing small changes. It does not require a separate file, so all styles are contained within the HTML file. However, it is less efficient for larger websites because the styles cannot be reused across multiple pages.</p>
+
+<h2>Inline CSS</h2>
+<p>Inline CSS is added directly to an HTML element using the <b>style</b> attribute. This method allows you to apply styles to a specific element only. Example: <b>&lt;p style="color: blue; font-size: 16px;"&gt;Hello World&lt;/p&gt;</b>. Inline CSS is useful for quick changes or overriding other styles, but it is not recommended for maintaining a clean and organized code structure.</p>
+
+
+
+        <a href="http://127.0.0.1:5500/day9/box.html" target="_self"><button class="back">Box Model</button></a>
+        
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
