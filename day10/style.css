@@ -1,5 +1,5 @@
-body{
-    font-family:Arial, Helvetica, sans-serif;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -21,10 +21,11 @@ body{
     align-items: center;
     gap: 24px;
     text-decoration: none;
-    
-   
+
+
 }
-.nav-list a{
+
+.nav-list a {
     text-decoration: none;
     color: lightslategray
 }
@@ -39,12 +40,14 @@ body{
     margin-top: 14px;
     margin-right: 100px;
 }
-.hero{
-   background-color: rgb(224, 223, 223);
-   padding: 100px;
-   display: flex;
+
+.hero {
+    background-color: rgb(224, 223, 223);
+    padding: 100px;
+    display: flex;
 }
-.req-btn{
+
+.req-btn {
     background-color: rgb(250, 162, 21);
     color: rgb(15, 59, 168);
     border-radius: 8px;
@@ -53,23 +56,27 @@ body{
     height: 50px;
     font-weight: bold;
 }
-.h1{
-    color:rgb(69, 46, 198);
+
+.h1 {
+    color: rgb(69, 46, 198);
 }
-img{
-    margin-left:80px;
+
+img {
+    margin-left: 80px;
 }
-.para{
+
+.para {
     margin-left: 145px;
 }
-h2{
+
+h2 {
     text-align: center;
 }
+
 .programs-section {
-    background: #b8b1b1;
-    padding: 40px 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
+    background: #b4b8b1;
+    padding: 40px;
+
 }
 
 .programs-section h2 {
@@ -82,28 +89,36 @@ h2{
     display: flex;
     justify-content: center;
     gap: 25px;
-    flex-wrap: wrap;
+
 }
 
 .card {
     width: 280px;
     background: white;
     border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+
 }
 
 .card-header {
-    padding: 25px 0;
+    padding: 45px;
     color: white;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+
 }
 
-.engineering { background: #f4a000; }
-.business { background: #0bb57b; }
-.arts { background: #9b65ff; }
+.engineering {
+    background: #f4a000;
+}
+
+.business {
+    background: #0bb57b;
+}
+
+.arts {
+    background: #9b65ff;
+}
 
 .card-body {
     padding: 20px;
@@ -129,8 +144,50 @@ h2{
     font-weight: bold;
     text-decoration: none;
 }
+.student-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 90px;
+    background-color: #e3e2e2;
 
-
-
-
-  
+}
+.student-card {
+    background: #ff4fc3;
+    padding: 60px 100px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 100px;
+    width: 400px;
+    height: 120px;
+}
+.campus-info {
+    margin-top: 15px;
+    font-size: 16px;
+}
+.campus-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+.footer {
+    background: #0b3580;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+.footer-box h4 {
+    margin-bottom: 10px;
+}
+.copyright {
+    background: #0b3580;
+    text-align: center;
+    color: #d4d9e4;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid #345c9d;
+}
