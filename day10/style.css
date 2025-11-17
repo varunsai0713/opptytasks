@@ -1,3 +1,8 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -16,9 +21,12 @@
     align-items: center;
     gap: 24px;
     text-decoration: none;
+    
+   
 }
 .nav-list a{
     text-decoration: none;
+    color: lightslategray
 }
 
 .nav-btn {
@@ -32,17 +40,97 @@
     margin-right: 100px;
 }
 .hero{
-   background-color: lightgrey;
+   background-color: rgb(224, 223, 223);
    padding: 100px;
+   display: flex;
 }
 .req-btn{
-    background-color: rgb(236, 207, 42);
-    color: rgb(66, 66, 151);
+    background-color: rgb(250, 162, 21);
+    color: rgb(15, 59, 168);
     border-radius: 8px;
     padding: 10px;
-    width: 100px;
-    height: 40px;
+    width: 120px;
+    height: 50px;
+    font-weight: bold;
 }
 .h1{
     color:rgb(69, 46, 198);
 }
+img{
+    margin-left:80px;
+}
+.para{
+    margin-left: 145px;
+}
+h2{
+    text-align: center;
+}
+.programs-section {
+    background: #b8b1b1;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.programs-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.program-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.card-header {
+    padding: 25px 0;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.engineering { background: #f4a000; }
+.business { background: #0bb57b; }
+.arts { background: #9b65ff; }
+
+.card-body {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-body h3 {
+    margin: 0 0 10px;
+    color: #0056b3;
+    font-size: 18px;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.4;
+}
+
+.card-body a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0056b3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+  
