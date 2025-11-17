@@ -8,8 +8,8 @@ body {
 
 
 header {
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    padding: 20px 0;
+    background: linear-gradient(to right, #4facfe, #000f0f);
+    padding: 20px;
     text-align: center;
 }
 
@@ -17,7 +17,6 @@ header nav a {
     color: white;
     text-decoration: none;
     margin: 0 20px;
-    font-weight: bold;
     font-size: 18px;
 }
 
@@ -45,7 +44,6 @@ h1 {
     width: 250px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    overflow: hidden;
     transition: transform 0.3s, background-color 0.3s;
     text-align: center;
 }
@@ -53,7 +51,7 @@ h1 {
 .card img {
     width: 100%;
     height: 150px;
-    object-fit: cover;
+   
 }
 
 .card p {
