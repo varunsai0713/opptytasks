@@ -3,12 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Js</title>
+    <title>Even and Odd Checker</title>
+    <style>
+        #form {
+            text-align: center;
+            margin-top: 200px;
+            font-weight: bold;
+        }
+        #num {
+            padding: 5px;
+            font-size: 16px;
+        }
+        #checkBtn {
+            padding: 5px 10px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-     <h1>Hello JavaScript</h1>
-    <script src="script.js">
-        
+    <div id="form">
+        <input type="number" id="num" placeholder="Enter a number">
+        <button id="checkBtn" onclick="checkNumber()">Check</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function checkNumber() {
+            let n = document.getElementById("num").value;
+            let result = document.getElementById("result");
+
+            if (n === "") {
+                result.innerHTML = "Please enter a number!";
+                return;
+            }
+
+            if (n % 2 === 0) {
+                document.body.style.background = "#F54927"; // color for even
+                result.innerHTML = n + " is EVEN";
+            } else {
+                document.body.style.background = "#F5B027"; // color for odd
+                result.innerHTML = n + " is ODD";
+            }
+        }
     </script>
 </body>
 </html>
