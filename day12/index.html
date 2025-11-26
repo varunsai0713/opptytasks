@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <style>
+        body {
+            background-color: rgb(184, 200, 222);
+            font-family: Arial, sans-serif;
+        }
+        .intro h1 {
+            text-align: center;
+        }
+
+        .intro p {
+            text-align: left;
+            line-height: 1.6;
+            width: 100%;
+            margin: auto;
+        }
+
+        .form {
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 40px;
+            padding: 20px;
+            margin: 30px auto;
+            width: 25%;
+            background-color: rgb(219, 219, 195);
+        }
+
+        .bmi-output {
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <h1>BMI Introduction</h1>
+        <p>
+            BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. These ranges of BMI vary based on factors such as region and age, and are sometimes further divided into subcategories such as severely underweight or very severely obese. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required. Refer to the table below to see the different categories based on BMI that are used by the calculator.
+        </p>
+    </div>
+
+    <div class="form">
+        <h1><b>BMI Calculator</b></h1>
+
+        <label for="weight">Weight (kg):</label><br>
+        <input type="number" id="weight" placeholder="Enter weight in kg"><br><br>
+
+        <label for="height">Height (cm):</label><br>
+        <input type="number" id="height" placeholder="Enter height in centimeters"><br><br>
+
+        <button onclick="calculateBMI()">Calculate BMI</button>
+
+        <p class="bmi-output">Your BMI: <span id="bmiResult"></span></p>
+        <p class="bmi-output"><span id="bmiCategory"></span></p>
+    </div>
+
+    <script>
+        function calculateBMI() {
+            const weight = parseFloat(document.getElementById('weight').value);
+            let height = parseFloat(document.getElementById('height').value);
+
+            const bmiResult = document.getElementById('bmiResult');
+            const bmiCategory = document.getElementById('bmiCategory');
+
+           
+            if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+                bmiResult.innerText = "Please enter valid numbers.";
+                return;
+            }
+
+           height = height / 100;
+
+            const bmi = weight / (height * height);
+            bmiResult.innerText = bmi.toFixed(2);
+
+            let category = "";
+            if (bmi < 18.5) {
+                category = "Underweight";
+            } else if (bmi < 24.9) {
+                category = "Normal weight";
+            } else if (bmi < 29.9) {
+                category = "Overweight";
+            } else {
+                category = "Obese";
+            }
+
+            bmiCategory.innerText = `Category: ${category}`;
+        }
+    </script>
+
+</body>
+</html>
