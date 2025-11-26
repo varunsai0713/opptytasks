@@ -24,18 +24,13 @@
     <div id="form">
         <input type="number" id="num" placeholder="Enter a number">
         <button id="checkBtn" onclick="checkNumber()">Check</button>
-        <p id="result"></p>
+        
     </div>
 
     <script>
         function checkNumber() {
             let n = document.getElementById("num").value;
-            let result = document.getElementById("result");
-
-            if (n === "") {
-                result.innerHTML = "Please enter a number!";
-                return;
-            }
+            
 
             if (n % 2 === 0) {
                 document.body.style.background = "#F54927"; 
