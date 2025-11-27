@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Web Page</title>
+    <style>
+    .form{
+        border: 2px solid rgb(50, 228, 252);
+        text-align: center;
+        width: 400px;
+        margin-left: 530px;
+        border-radius: 10px;
+        margin-top: 50px;
+        padding: 50px;
+        background-color: rgb(165, 210, 220);
+        
+    }
+    body{
+        background: linear-gradient(to left,pink, rgb(157, 157, 233));
+    }
+    .h2{
+        font-size: 30px;
+        
+    }
+    .name{
+        font-size: 25px;
+        
+    }
+    #name{
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 6px;
+        width: 100%;
+    }
+    #maths{
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 6px;
+        width: 100%;
+    }
+    #english{
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 6px;
+        width: 100%;
+    }
+    #science{
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 6px;
+        width: 100%;
+    }
+    .maths{
+         font-size: 25px;
+    }
+    .eng{
+        font-size: 25px;
+    }
+    .sci{
+        font-size: 25px;
+    }
+    button{
+        border-radius: 10px;
+        padding: 15px;
+        width: 50%;
+        font-size: 17px;
+        background-color: blueviolet;
+        cursor: pointer;
+    }
+    #result{
+        text-align: center;
+    }
+    
+    </style>
+</head>
+<body>
+       <section>
+        <div class="form">
+        <div class="h2">
+            <h2>Marks Calculator</h2>
+        </div>
+       <div class="name">
+        <label for="name">Name:</label><br>
+       <input type="text" id="name" placeholder="Enter Your Name"><br><br>
+       </div>
+       <div class="maths">
+        <label for="name">Maths:</label><br>
+       <input type="number" id="maths" placeholder="Enter Your Marks"><br><br>
+       </div>
+       <div class="eng">
+        <label for="name">English:</label><br>
+       <input type="number" id="english" placeholder="Enter Your Marks"><br><br>
+       </div>
+       <div class="sci">
+        <label for="name">Science:</label><br>
+       <input type="number" id="science" placeholder="Enter Your Marks"><br><br>
+       </div>
+       <button onclick="calculate()" class="button">Calculate</button><br><br>
+       <button onclick="resetForm()" class="button" >Reset</button>
+
+        </div>
+        
+       </section>
+<div id="result" style="margin-top:20px; font-size:20px; font-weight:bold;"></div>
+
+
+
+<script>
+function calculate(){
+   let name = document.getElementById("name").value;
+   let sub1 = Number(document.getElementById("maths").value);
+   let sub2 = Number(document.getElementById("english").value);
+   let sub3 = Number(document.getElementById("science").value);
+
+   let total = sub1 + sub2 + sub3;
+   let avg = total / 3;
+    let grade = "";
+    if (avg >= 90) grade = "A";
+    else if (avg >= 75) grade = "B";
+    else if (avg >= 50) grade = "C";
+    else grade = "Fail";
+
+    
+    let student = {
+        name: name,
+        marks: [sub1, sub2, sub3],
+        total: total,
+        average: avg.toFixed(2),
+        grade: grade
+    };
+
+   
+    document.getElementById("result").innerHTML =
+        "Name: " + student.name + "<br>" +
+        "Marks: " + student.marks.join(", ") + "<br>" +
+        "Total: " + student.total + "<br>" +
+        "Average: " + student.average + "<br>" +
+        "Grade: " + student.grade;
+}
+
+
+
+
+function resetForm() {
+    document.getElementById("name").value = "";
+    document.getElementById("maths").value = "";
+    document.getElementById("english").value = "";
+    document.getElementById("science").value = "";
+    document.getElementById("result").innerHTML = "";
+}
+
+   
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+</body>
+</html>
