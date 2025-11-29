@@ -15,7 +15,7 @@
 
 .left {
     display: flex;
-    align-items: center;
+    
     gap: 10px;
 }
 
@@ -90,17 +90,106 @@
 .prices{
     background-color: #2A0155;
     color: white;
+    padding: 40px;
 }
 .prices h2{
     font-size: 35px;
     text-align: center;
 }
-table {
+.crypto-table {
     width: 100%;
-    border-collapse: collapse; 
-    
+    border-collapse: collapse;
+    color: white;
+    font-family: Arial;
+    font-size: 16px;
 }
-.line{
-    border-bottom: 1px solid;
-   
+
+
+.crypto-table thead th {
+    padding: 14px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+    color: #d4c7ff;
+    text-align: left;
 }
+
+.info-icon {
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+
+.crypto-table tbody tr {
+    height: 70px;
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+}
+
+.crypto-table td {
+    padding: 12px 12px;
+    vertical-align: middle;
+}
+
+.star-icon {
+    width: 16px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+
+.name-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.coin-icon {
+    width: 30px;
+}
+
+.coin-name {
+    font-weight: 600;
+}
+
+.coin-symbol {
+    color: #9f8de3;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+
+.green {
+    color: #2ee56a;
+    font-weight: 600;
+}
+
+.red {
+    color: #ff4e4e;
+    font-weight: 600;
+}
+
+.btc {
+    font-size: 13px;
+    color: #a8a8ff;
+}
+
+
+.chart-cell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chart {
+    width: 130px;
+}
+
+.menu {
+    width: 16px;
+    opacity: 0.7;
+}
+
+
+
+
