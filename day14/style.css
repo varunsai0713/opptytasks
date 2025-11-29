@@ -1,5 +1,5 @@
 .hero {
-    background: #2A0155; 
+    background: linear-gradient(to right, #2A0155 55%, purple); 
     color: white;
     padding-bottom: 200px;
     
@@ -15,7 +15,6 @@
 
 .left {
     display: flex;
-    
     gap: 10px;
 }
 
@@ -109,33 +108,27 @@
     padding: 14px 10px;
     font-size: 15px;
     font-weight: 600;
-    border-bottom: 1px solid rgba(255,255,255,0.25);
+    border-bottom: 1px solid lightgrey;
     color: #d4c7ff;
     text-align: left;
 }
 
 .info-icon {
     width: 20px;
-    vertical-align: middle;
     margin-left: 4px;
 }
 
 
 .crypto-table tbody tr {
     height: 70px;
-    border-bottom: 1px solid rgba(255,255,255,0.18);
+    border-bottom: 1px solid lightgrey;
 }
 
 .crypto-table td {
     padding: 12px 12px;
-    vertical-align: middle;
+    
 }
 
-.star-icon {
-    width: 16px;
-    vertical-align: middle;
-    margin-right: 8px;
-}
 
 
 .name-cell {
@@ -145,7 +138,7 @@
 }
 
 .coin-icon {
-    width: 30px;
+    width: 25px;
 }
 
 .coin-name {
@@ -182,14 +175,224 @@
 }
 
 .chart {
-    width: 130px;
+    width: 100px;
 }
 
 .menu {
     width: 16px;
-    opacity: 0.7;
+    
+}
+.third-head{
+    text-align: center;
+    padding: 50px;
+    font-size: 25px;
+}
+.third-body{
+    display: flex;
+    gap: 250px;
+    justify-content: center;
+    align-items: center;
+}
+.third-body p{
+    font-size: 20px;
+}
+.fourth {
+    background: #2A0155;
+    color: white;
+    padding: 100px 150px;   
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;              
+}
+
+.fourth-first {
+    width: 550px; 
+}
+
+.fourth-image {
+    display: flex;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.fourth-image img {
+    border-radius: 7px;
+}
+
+.image-phone img {
+    width: 500px;
+    margin-right: 20px; 
+}
+.five-h3{
+    text-align: center;
+    font-size: 30px;
+    padding: 50px;
+}
+.three-cards{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.card-image{
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+    
+}
+.five{
+    border-radius: 20px;
+    padding: 10px;
+}
+.first-card{
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    width: 400px;
+    padding-bottom: 20px;
+}
+.first-card h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 15px 5px 15px;
+
+}
+
+.first-card p{
+    padding: 0 15px 10px 15px;
+    color: rgb(103, 100, 100);
+    font-size: 15px;
+    margin-bottom: 8px;
+
+}
+
+.first-card span{
+    padding-left: 15px;
+    color: rgb(103,100,100);
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 5px;
+}
+.subscribe {
+    background: #150043;
+    text-align: center;
+    padding: 60px;
+    color: white;
+    
+}
+
+.subscribe h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subscribe h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 60px;
 }
 
 
+.input-box {
+    width: 600px;             
+    height: 55px;             
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
 
 
+.input-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;           
+}
+
+.input-box input::placeholder {
+    color: white;
+    font-size: 15px;
+}
+
+
+.input-box button {
+    background: #f6786b;
+    color: white;
+    border: none;              
+    border-radius: 30px;       
+    padding: 10px;        
+    font-size: 18px;          
+    margin-right: 8px;         
+    cursor: pointer;
+}
+.footer {
+    background: linear-gradient(to right, #2A0155, #4B0C77);
+    padding: 80px 120px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-column p {
+    margin: 8px 0;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.footer-column p:hover {
+    opacity: 1;
+}
+
+
+.divider {
+    border: none;
+    border-top: 1px solid #ffffff50;
+    margin-bottom: 40px;
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    opacity: 0.8;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    border: 1px solid #ffffff50;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.icon:hover {
+    opacity: 1;
+}
