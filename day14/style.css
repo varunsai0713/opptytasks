@@ -189,9 +189,10 @@
 }
 .third-body{
     display: flex;
-    gap: 250px;
+    gap: 150px;
     justify-content: center;
     align-items: center;
+    margin-left: 40px;
 }
 .third-body p{
     font-size: 20px;
