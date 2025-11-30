@@ -228,7 +228,7 @@
 .five-h3{
     text-align: center;
     font-size: 30px;
-    padding: 50px;
+    padding: 10px;
 }
 .three-cards{
     display: flex;
@@ -243,7 +243,7 @@
 }
 .five{
     border-radius: 20px;
-    padding: 10px;
+    padding: 65px;
 }
 .first-card{
     border: 1px solid whitesmoke;
