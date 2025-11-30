@@ -345,15 +345,15 @@
 }
 
 .footer-column h3 {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 20px;
     font-weight: 600;
 }
 
 .footer-column p {
     margin: 8px 0;
-    opacity: 0.8;
     cursor: pointer;
+    line-height: 2.3;
 }
 
 .footer-column p:hover {
@@ -374,11 +374,6 @@
     align-items: center;
 }
 
-.footer-bottom p {
-    opacity: 0.8;
-}
-
-
 .social-icons {
     display: flex;
     gap: 15px;
@@ -386,13 +381,12 @@
 
 .icon {
     border: 1px solid #ffffff50;
-    padding: 10px 14px;
+    padding: 4px 7px;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 25px;
     cursor: pointer;
-    opacity: 0.8;
+    
+    
 }
 
-.icon:hover {
-    opacity: 1;
-}
+
