@@ -1,7 +1,8 @@
 .hero {
-    background: linear-gradient(to right, #2A0155 55%, purple); 
+    position: relative;
+    background: linear-gradient(to right, #2A0155 55%, purple);
     color: white;
-    padding-bottom: 200px;
+    padding-bottom: 0;
     
 }
 
@@ -11,7 +12,6 @@
     align-items: center;
     padding: 25px 80px;
 }
-
 
 .left {
     display: flex;
@@ -26,7 +26,6 @@
     font-size: 26px;
     font-weight: bold;
 }
-
 
 .center {
     display: flex;
@@ -49,8 +48,6 @@
     font-size: 16px;
     cursor: pointer;
 }
-
-
 
 .second {
     margin-top: 120px;
@@ -86,15 +83,18 @@
     right: 120px;
     top: 180px;
 }
-.prices{
+
+.prices {
     background-color: #2A0155;
     color: white;
     padding: 40px;
 }
-.prices h2{
+
+.prices h2 {
     font-size: 35px;
     text-align: center;
 }
+
 .crypto-table {
     width: 100%;
     border-collapse: collapse;
@@ -358,9 +358,7 @@
     line-height: 2.3;
 }
 
-.footer-column p:hover {
-    opacity: 1;
-}
+
 
 
 .divider {
