@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Conditionals</title>
+</head>
+<body>
+    <h2>JavaScript Conditionals</h2>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+    //if 
+let age = 18;
+let text = "You can Not drive!";
+
+if (age >= 18) {
+  text = "You can drive!";
+}
+
+document.getElementById("demo").innerHTML = text;
+
+
+//if esle
+const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+document.getElementById("demo1").innerHTML = greeting;
+
+let a = 5;
+document.getElementById("demo2").innerHTML = (a == 8);
+
+
+//logical
+let x = 6;
+let y = 3;
+
+document.getElementById("demo").innerHTML = 
+(x < 10 && y > 1) + "<br>" +
+(x < 10 && y < 1);
+
+
+
+
+
+
+
+
+</script>
+    
+
+
+
+
+
+
+</body>
+</html>

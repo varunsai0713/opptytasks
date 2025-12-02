@@ -388,5 +388,47 @@
     
     
 }
+.scroll-mouse {
+    position: absolute;
+    bottom: -40px;       
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 50;
+}
+
+
+
+.mouse-shape {
+    width: 40px;
+    height: 70px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mouse-wheel {
+    width: 6px;
+    height: 12px;
+    background: #fff;
+    border-radius: 3px;
+    margin-top: 10px;
+    animation: wheel 1.5s ease-in-out infinite;
+}
+
+
+@keyframes float {
+    0% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -12px); }
+    100% { transform: translate(-50%, 0); }
+}
+
+@keyframes wheel {
+    0% { opacity: 1; transform: translateY(0); }
+    50% { opacity: 0.2; transform: translateY(12px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
 
 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h2>Creating an arrays</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    
+    
+    <script>
+    const cars=["Audi", "BMW", "Suzuki", "Benz"];
+    cars[1] = "bmw";
+    cars.length=3;
+    document.getElementById("demo").innerHTML = cars;
+
+
+     //Accessing Array Elements
+   const bikes=["ns",'honda','unicorn','triumph','Royal Enfiled'];
+   document.getElementById("demo1").innerHTML=bikes[3];
+   
+  //Changing an Array Element
+   const colors= new Array("Pink","Orange","green","blue");
+   colors[4] = "brown";
+   colors[1]="Skyblue";
+   document.getElementById('demo2').innerHTML=colors;
+
+   //Converting an Array to a String
+   //The JavaScript method toString() converts an array to a string of (comma separated) array values.
+   const fruits = ["Apple","Banana","Grapes","Orange","Watermelon"];
+   let list = fruits.toString();
+   document.getElementById('demo3').innerHTML=list;
+
+   //Arrays are Objects
+   const person = ["varun","Sai",10,20,30];
+   document.getElementById("demo4").innerHTML=person[2];
+   
+   const human = {firstname:"Varun", Secondname:"Sai", num:23};
+   document.getElementById("demo5").innerHTML=human.firstname;
+   
+
+   //length of an array
+   const name = ["varun","suhas",22,34,"sai"];
+   let mynames = name.length;
+   document.getElementById("demo6").innerHTML=mynames;
+
+  //Accessing the Last Array Element
+  const array = ["array", "array2","array3","array4"];
+  document.getElementById("demo7").innerHTML= array[array.length-2];
+
+  //Adding Array Elements
+  //The easiest way to add a new element to an array is using the push() method:
+  const con = ["abc", 1, "bca"]
+  con.push("bbb");
+  document.getElementById("demo8").innerHTML=con;
+
+  //Associative Arrays
+  //JavaScript does not support arrays with named indexes.
+  //person["firstName"] = "John";
+  //In JavaScript, arrays always use numbered indexes.  
+  const hobbies = [];
+  hobbies[0] = "learning";
+  hobbies[1] = "Playing";
+  hobbies[2] = "Running";
+  document.getElementById("demo9").innerHTML = "varun is"+ " "  + hobbies[0];
+
+
+
+
+  const  num = ["apple","banana","watermelon"];
+  let nums = num.pop()
+  document.getElementById("demo10").innerHTML=nums;
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
