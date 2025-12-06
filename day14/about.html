@@ -42,10 +42,11 @@
 .buttons button{
     border-radius: 20px;
     padding: 10px 20px;
+    border-style: none;
+    font-weight: bolder;
 }
 .buttons  a{
     text-decoration: none;
-    border-radius: 120px;
     font-weight: bold;
 }
 .buttons button:hover{
@@ -84,7 +85,7 @@
         font-size: 40px;
     }
     .second-image img{
-        max-width: 50%;
+        max-width: 80%;
        height: auto;
        margin-top: 20px;
        margin-left: 40px;
@@ -100,6 +101,80 @@
     .about h2{
         color: #16D5FF;
     }
+    .about ul{
+        list-style-type:  square;;
+    }
+    .about button{
+        border-radius: 10px;
+        padding: 15px 20px;
+        margin-top: 20px;
+        background-color: #16D5FF;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        border-color: #16D5FF;
+    }
+    .third{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+        margin-top: 20px;
+        padding: 50px;
+        background-color: #eef3f4;
+    }
+    .third b{
+        font-size: 50px;
+    }
+    .third p{
+        color: #16D5FF;
+        font-size: 20px;
+    }
+    .third img{
+       margin-left: 50px;
+    }
+    .fourth-one{
+        text-align: center;
+        margin-top: 40px;
+        
+    }
+    .fourth-second{
+        display: flex;
+    }
+    .features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 40px 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.feature-box {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.feature-box img {
+  width: 55px;
+  height: 55px;
+}
+
+.feature-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #000;
+}
+
+.feature-box p {
+  font-size: 15px;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+  max-width: 280px;
+}
+
     </style>
 </head>
 <body>
@@ -146,15 +221,84 @@
             Cryptous is a digital asset platform built to make cryptocurrency simple, secure, and accessible for everyone.<br> We bring advanced blockchain technology into a clean and user-friendly experience so anyone can trade, store, and grow their digital assets with confidence.
         </p>
         <p>Our goal is to empower people to explore the future of finance with complete transparency, strong security, and real freedom.</p>
-        <img src="tik">
+        <ul>
+            <li>
+              Cryptous is a platform built to make cryptocurrency simple and secure for everyone.
+            </li>
+            <li>
+             We combine blockchain technology with a clean, easy-to-use experience.
+            </li>
+            <li>
+              Our goal is to help people explore and grow in the world of digital finance confidently.
+            </li>
+        </ul>
+         <button>Read More</button>
     </div>
 
-
+     
 </section>
 
 
+<section class="third">
+
+   <div class="third-div">
+      <img src="https://themewagon.github.io/CryptoCoin/img/icon-9.png"><br>
+      <b>123456</b>
+      <p>Today Transactions</p>
+    </div>
+    <div>
+      <img src="https://themewagon.github.io/CryptoCoin/img/icon-10.png"><br>
+      <b>123456</b>
+      <p>Monthly Transactions</p>
+    </div>
+    <div>
+       <img src="https://themewagon.github.io/CryptoCoin/img/icon-2.png"><br>
+       <b>123456</b>
+       <p>Total Transactions</p>
+    </div>
+</section>
 
 
+<section class="fourth">
+    <section class="features">
+  <div class="feature-box">
+    <img src="https://themewagon.github.io/CryptoCoin/img/icon-7.png">
+    <h3>Easy To Start</h3>
+    <p>Cryptous makes entering the crypto world simple. Create an account and start exploring digital assets in minutes.</p>
+  </div>
+
+  <div class="feature-box">
+    <img src="https://themewagon.github.io/CryptoCoin/img/icon-6.png">
+    <h3>Safe & Secure</h3>
+    <p>Your assets are protected by advanced encryption and multi-layer security. Trade and store crypto safely.</p>
+  </div>
+
+  <div class="feature-box">
+    <img src="https://themewagon.github.io/CryptoCoin/img/icon-5.png">
+    <h3>Affordable Plans</h3>
+    <p>Enjoy low fees and flexible plans designed for every type of user. Start free and grow anytime.</p>
+  </div>
+
+  <div class="feature-box">
+    <img src="https://themewagon.github.io/CryptoCoin/img/icon-4.png">
+    <h3>Secure Storage</h3>
+    <p>We offer secure digital wallets to keep assets protected. Your keys and funds are always safe.</p>
+  </div>
+
+  <div class="feature-box">
+    <img src="https://themewagon.github.io/CryptoCoin/img/icon-3.png">
+    <h3>Protected By Insurance</h3>
+    <p>Your digital assets are insured against major risks, giving you an extra layer of protection.</p>
+  </div>
+
+  <div class="feature-box">
+    <img src="https://themewagon.github.io/CryptoCoin/img/icon-8.png">
+    <h3>24/7 Support</h3>
+    <p>Our support team is available anytime you need. Get answers instantly, day or night.</p>
+  </div>
+</section>
+
+</section>
 
 
 </body>
