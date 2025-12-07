@@ -375,60 +375,33 @@
 }
 
 .social-icons {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 25px;
 }
 
 .icon {
-    border: 1px solid #ffffff50;
-    padding: 4px 7px;
-    border-radius: 10px;
-    font-size: 25px;
-    cursor: pointer;
-    
-    
-}
-.scroll-mouse {
-    position: absolute;
-    bottom: -40px;       
-    left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;
-    z-index: 50;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #9e9e9e;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+  
 }
 
-
-
-.mouse-shape {
-    width: 40px;
-    height: 70px;
-    border: 2px solid #ffffff;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+.icon img {
+  width: 24px;
+  
+  
 }
 
-.mouse-wheel {
-    width: 6px;
-    height: 12px;
-    background: #fff;
-    border-radius: 3px;
-    margin-top: 10px;
-    animation: wheel 1.5s ease-in-out infinite;
+.icon:hover {
+  background: #f45b56; 
+  border-color: #f45b56;
 }
 
-
-@keyframes float {
-    0% { transform: translate(-50%, 0); }
-    50% { transform: translate(-50%, -12px); }
-    100% { transform: translate(-50%, 0); }
-}
-
-@keyframes wheel {
-    0% { opacity: 1; transform: translateY(0); }
-    50% { opacity: 0.2; transform: translateY(12px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
 
 

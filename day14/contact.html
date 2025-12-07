@@ -62,13 +62,111 @@ button:hover{
 }
 .form{
     background-color: #4E426F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding: 100px;
 
+}
+.form1{
+  color: white;
+  font-size: larger;
 }
 .form img{
     width: 13px;
     
     
 }
+
+.form2 {
+  width: 400px;
+  margin: 80px auto;    
+  background-color: #fff;
+  padding: 30px 45px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.contact-form label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+  
+}
+
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  
+  
+  
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #9c27b0;
+  outline: none;
+}
+
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(#8b00ff, #ff00c8);
+  color: white;
+  
+}
+.contact-form button:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+      background: linear-gradient(to right, #2A0155, #4B0C77);
+      padding: 80px 120px;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+
+    .footer-column h3 {
+      font-size: 15px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .footer-column p {
+      margin: 8px 0;
+      cursor: pointer;
+      line-height: 2.3;
+    }
+    
+    .footer-column p:hover{
+      color:#E598FF;
+      transition: 0.3s;
+     
+    }
+    .footer-column h3:hover{
+      color:#E598FF;
+      transition: 0.3s;
+      
+    }
     </style>
 </head>
 <body>
@@ -104,7 +202,79 @@ button:hover{
 
   </div>
 
+  <div class="form2">
+  <form class="contact-form">
+    
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <label for="num">Phone Number</label>
+    <input type="number" id="num" placeholder="Enter your phone number">
+
+    <label for="msg">Message</label>
+    <textarea id="msg" placeholder="Write your message..."></textarea>
+
+    <button type="submit">Send Message</button>
+    
+  </form>
+</div>
+
+
 </section>
+
+
+<footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-column">
+        <h3>Company</h3>
+        <p>About us</p>
+        <p>Terms of use</p>
+        <p>Privacy Policy</p>
+        <p>Disclaimer</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Businesses</h3>
+        <p>Prime</p>
+        <p>Custody</p>
+        <p>Asset Hub</p>
+        <p>Commerce</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Exchange</h3>
+        <p>Exchange Home</p>
+        <p>Margin Trading</p>
+        <p>Derivatives Trading</p>
+        <p>Trading Arena</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Blockchain</h3>
+        <p>Chain Explorer</p>
+        <p>The Syndicate</p>
+        <p>Security</p>
+        <p>Cryptous Credit</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <p>Prices</p>
+        <p>Site Widgets</p>
+        <p>Tax</p>
+        <p>Blog</p>
+        <p>Research</p>
+      </div>
+
+    </div>
+    <hr>
+  <p>Cryptous,1999</p>
+
+  </footer>
 
 </body>
 </html>
