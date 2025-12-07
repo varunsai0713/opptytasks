@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        body{
+            background: linear-gradient(135deg, #02004a, #110753, #1a0f7a);
+        }
+        .head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #c08ef6;
+  padding: 10px 20px;
+}
+
+.head img {
+  width: 45px;
+  height: 45px;
+}
+.head h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: transparent;
+  background: linear-gradient(to right, #410e54, #eb23da);
+  background-clip: text;
+  
+}
+.buttons {
+    
+    margin-left: 600px;
+    display: flex;
+    gap: 100px;
+    
+
+}
+.buttons button{
+    border-radius: 20px;
+    padding: 10px 20px;
+    border-style: none;
+    font-weight: bolder;
+}
+.buttons  a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.buttons button:hover{
+    background-color: #b8e2ec;  
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.hero-image img {
+  width: 700px;
+  height: auto;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 15px;
+}
+
+.hero-content h2,
+.hero-content h1 {
+  color: white;
+  font-size: 50px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.register-box {
+  display: flex;
+  width: 420px;
+  height: 48px;
+  border-radius: 50px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.email-input {
+  flex: 1;
+  border: none;
+  padding: 0 18px;
+  font-size: 16px;
+  outline: none;
+}
+
+.register-btn {
+  background: linear-gradient(90deg, #8b00ff, #ff00c8);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  padding: 0 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  opacity: 0.8;
+}
+.app-buttons {
+  display: flex;
+  gap: 18px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.app-buttons img {
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 60px auto;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.price-card {
+  width: 280px;
+  padding: 35px 25px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+
+.price-card:hover {
+  border-color: #dcdcdc;
+}
+
+
+.price-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #006d77;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+
+.price-card h2 {
+  font-size: 42px;
+  color: #e65c2c;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.price-card h2 span {
+  font-size: 14px;
+  color: #666;
+  font-weight: 400;
+}
+
+
+.price-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.price-card ul li {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.price-card button {
+  background: #e65c2c;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.price-card button:hover {
+  background: #d35024;
+}
+.footer {
+      background: linear-gradient(to right, #2A0155, #4B0C77);
+      padding: 80px 120px;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+
+    .footer-column h3 {
+      font-size: 15px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .footer-column p {
+      margin: 8px 0;
+      cursor: pointer;
+      line-height: 2.3;
+    }
+    
+    .footer-column p:hover{
+      color:#E598FF;
+      transition: 0.3s;
+     
+    }
+    .footer-column h3:hover{
+      color:#E598FF;
+      transition: 0.3s;
+      
+    }
+
+
+
+    </style>
+</head>
+<body>
+     
+    <section>
+
+   <div class="head">
+  <img src="logo.png">
+  <h1>Cryptous</h1>
+
+  <div class="buttons">
+    <button><a href="#">Buy Crypto</a></button>
+  <button><a href="#">Exchange</a></button>
+  <button><a href="#">Wallet</a></button>
+  </div>
+  </div>
+    </section>
+
+
+  <section class="hero">
+  
+  <div class="hero-image">
+    <img src="Pricing-removebg-preview.png" alt="crypto coins">
+  </div>
+
+  <div class="hero-content">
+    <h2>Start Now Mining</h2>
+    <h1>Cryptocurrency</h1>
+
+    <div class="register-box">
+      <input type="email" placeholder="Enter Your Email Here" class="email-input">
+      <button class="register-btn">Register Now</button>
+     
+    </div>
+ <div class="app-buttons">
+  <img src="gplay.png" alt="Google Play">
+  <img src="app.png" alt="App Store">
+</div>
+
+  </div>
+
+</section>
+
+
+<section class="pricing">
+
+  <div class="price-card">
+    <h2>Starter</h2>
+    <h2>₹0 <span>/month</span></h2>
+
+    <ul>
+      <li>Secure Wallet ✓</li>
+      <li>Basic Trading ✓</li>
+      <li>Staking Rewards ✗</li>
+      <li>Advanced Analytics ✗</li>
+      <li>Email Integration ✗</li>
+      <li>API Access ✗</li>
+    </ul>
+
+    <button>Choose Plan</button>
+  </div>
+
+  <div class="price-card">
+    <h2>Pro</h2>
+    <h2>₹599 <span>/month</span></h2>
+
+    <ul>
+      <li>Secure Wallet ✓</li>
+      <li>Basic Trading ✓</li>
+      <li>Staking Rewards ✓</li>
+      <li>Advanced Analytics ✓</li>
+      <li>Email Integration ✓</li>
+      <li>API Access ✗</li>
+    </ul>
+
+    <button>Choose Plan</button>
+  </div>
+
+  <div class="price-card">
+    <h2>Business</h2>
+    <h2>₹1299 <span>/month</span></h2>
+
+    <ul>
+      <li>Secure Wallet ✓</li>
+      <li>Basic Trading ✓</li>
+      <li>Staking Rewards ✓</li>
+      <li>Advanced Analytics ✓</li>
+      <li>Email Integration ✓</li>
+      <li>API Access ✓</li>
+    </ul>
+
+    <button>Choose Plan</button>
+  </div>
+
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-column">
+        <h3>Company</h3>
+        <p>About us</p>
+        <p>Terms of use</p>
+        <p>Privacy Policy</p>
+        <p>Disclaimer</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Businesses</h3>
+        <p>Prime</p>
+        <p>Custody</p>
+        <p>Asset Hub</p>
+        <p>Commerce</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Exchange</h3>
+        <p>Exchange Home</p>
+        <p>Margin Trading</p>
+        <p>Derivatives Trading</p>
+        <p>Trading Arena</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Blockchain</h3>
+        <p>Chain Explorer</p>
+        <p>The Syndicate</p>
+        <p>Security</p>
+        <p>Cryptous Credit</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <p>Prices</p>
+        <p>Site Widgets</p>
+        <p>Tax</p>
+        <p>Blog</p>
+        <p>Research</p>
+      </div>
+
+    </div>
+    <hr>
+  <p>Cryptous,1999</p>
+
+  </footer>
+
+
+</body>
+</html>
