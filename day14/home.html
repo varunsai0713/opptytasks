@@ -3,151 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="logo.png">
     <title>Home</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
     <style>
-        .list{
-            display: flex;
-        }
-        body{
-            background-image: url("https://i.pinimg.com/originals/2e/87/e3/2e87e32a6f81832889966dbf3bd59c51.gif");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        .blockchain{
-            display: flex;
-             
-        }
-        .image{
-            display: flex;
-            gap: 800px;
-        }
-        .box1{
-            margin-left: 70px;
-        }
-        .footer {
-      background: linear-gradient(to right, #2A0155, #4B0C77);
-      padding: 80px 120px;
-      color: white;
-      font-family: 'Poppins', sans-serif;
-    }
 
-    .footer-container {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 50px;
-    }
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #F7F9FF;
+    color: #222;
+}
 
-    .footer-column h3 {
-      font-size: 15px;
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
 
-    .footer-column p {
-      margin: 8px 0;
-      cursor: pointer;
-      line-height: 2.3;
-    }
-    
-    .footer-column p:hover{
-      color:#E598FF;
-      transition: 0.3s;
-     
-    }
-    .footer-column h3:hover{
-      color:#E598FF;
-      transition: 0.3s;
-      
-    }
+.container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.head {
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+    background: linear-gradient(to right, #E8CEFF, #D6E6FF);
+   
+}
+
+.head img {
+    width: 55px;
+}
+
+.head h1 {
+    margin-left: 12px;
+    font-size: 32px;
+    background: linear-gradient(to right, #410e54, #eb23da);
+    background-clip: text;
+    color: transparent;
+}
+
+.buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: rgb(152, 229, 240);
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background: #b3d4f5;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.section-area {
+    padding: 50px 80px;
+    margin: 0;                 
+}
+
+
+.section-area1{
+    background: #F6F9FF;
+}
+.section-area2{
+    background: #EEF5FF;
+}
+.section-area3{
+    background: #F9FCFF;
+}
+.section-area4{
+    background: #E9F5FF;
+}
+
+.title{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.subtitle{
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+    gap: 40px;
+}
+
+.side-img{
+    width: 320px;
+    height: 320px;
+}
+
+.content-list li{
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+
+.blockchain{
+    display: flex;
+    gap: 40px;
+}
+
+.block-info{
+    max-width: 600px;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+.benefit-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.box-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.box-list li{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.footer {
+    background: linear-gradient(to right, #2A0155, #4B0C77);
+    color: white;
+    padding: 60px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column p:hover{
+    color: #E598FF;
+}
+
+.footer-copy{
+   margin-top: 20px;
+}
     </style>
 </head>
 <body>
-    
-    <h1 style="font-size: 50px; text-align: center; color: rgb(19, 20, 20);">What is Cryptocurrency?</h1>
-    <h2 style="font-size: 40px;">The Basics about Cryptocurrency</h2>
-    <div class="list">
-        <ul>
-        <li style="font-size: 20px; color: rgb(38, 38, 39); font-weight: 700; list-style:lower-alpha">Cryptocurrency comes under many names. You have probably read about some of the most popular types of cryptocurrencies such as Bitcoin, Litecoin, and Ethereum. Cryptocurrencies are increasingly popular alternatives for online payments. Before converting real dollars, euros, pounds, or other traditional currencies into ₿ (the symbol for Bitcoin, the most popular cryptocurrency), you should understand what cryptocurrencies are, what the risks are in using cryptocurrencies, and how to protect your investment.</li><br>
-        <li style="font-size: 20px; color: rgb(38, 38, 39); font-weight: 700; list-style:lower-alpha">A cryptocurrency is a digital currency, which is an alternative form of payment created using encryption algorithms. The use of encryption technologies means that cryptocurrencies function both as a currency and as a virtual accounting system. To use cryptocurrencies, you need a cryptocurrency wallet. These wallets can be software that is a cloud-based service or is stored on your computer or on your mobile device. The wallets are the tool through which you store your encryption keys that confirm your identity and link to your cryptocurrency.</li><br>
-        <li style="font-size: 20px; color: rgb(38, 38, 39); font-weight: 700; list-style:lower-alpha">Cryptocurrencies are still relatively new, and the market for these digital currencies is very volatile. Since cryptocurrencies don't need banks or any other third party to regulate them; they tend to be uninsured and are hard to convert into a form of tangible currency (such as US dollars or euros.) In addition, since cryptocurrencies are technology-based intangible assets, they can be hacked like any other intangible technology asset. Finally, since you store your cryptocurrencies in a digital wallet, if you lose your wallet (or access to it or to wallet backups), you have lost your entire cryptocurrency investment.</li>
-    
-    
-    </ul>
 
-
-
-    <img src="https://www.investopedia.com/thmb/RYd9C7xdsi1YM4MghfHfOYb_gxo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/TermDefinitions_crypto_final-940e93a6cb5341999a5d735fbf04fbfe.png" style="margin-left: 200px;margin-right: 20px; width: 300px; height: 300px;">
-   
-
-
+<header class="head">
+    <img src="logo.png" alt="logo">
+    <h1>Cryptous</h1>
+    <div class="buttons">
+        <button><a href="#">SIGN UP</a></button>
+        <button><a href="#">SIGN IN</a></button>
     </div>
-   
-    <h2 style="font-size: 40px;">Follow these tips to protect your cryptocurrencies:</h2>
-    <ul>
-        <li style="font-size: 20px; color: rgb(38, 38, 39); font-weight: 700;">
-            Look before you leap! Before investing in a cryptocurrency, be sure you understand how it works, where it can be used, and how to exchange it. Read the webpages for the currency itself (such as Ethereum, Bitcoin or Litecoin) so that you fully understand how it works, and read independent articles on the cryptocurrencies you are considering as well.
-        </li><br>
-        <li style="font-size: 20px; color: rgb(38, 38, 39); font-weight: 700;">
-            Use a trustworthy wallet. It is going to take some research on your part to choose the right wallet for your needs. If you choose to manage your cryptocurrency wallet with a local application on your computer or mobile device, then you will need to protect this wallet at a level consistent with your investment. Just like you wouldn't carry a million dollars around in a paper bag, don't choose an unknown or lesser-known wallet to protect your cryptocurrency. You want to make sure that you use a trustworthy wallet.
-        </li><br>
-        <li style="font-size: 20px; color: rgb(38, 38, 39); font-weight: 700;">Have a backup strategy. Think about what happens if your computer or mobile device (or wherever you store your wallet) is lost or stolen or if you don't otherwise have access to it. Without a backup strategy, you will have no way of getting your cryptocurrency back, and you could lose your investment.</li>
-    
+</header>
+
+<div class="container">
+
+<section class="section-area1">
+    <h1 class="title">What is Cryptocurrency?</h1>
+    <h2 class="subtitle">The Basics about Cryptocurrency</h2>
+
+    <div class="flex">
+        <ul class="content-list">
+            <li>Cryptocurrency comes under many names. You have probably read about some of the most popular types of cryptocurrencies such as Bitcoin, Litecoin, and Ethereum. Cryptocurrencies are increasingly popular alternatives for online payments. Before converting real dollars, euros, pounds, or other traditional currencies into ₿ (the symbol for Bitcoin, the most popular cryptocurrency), you should understand what cryptocurrencies are, what the risks are in using cryptocurrencies, and how to protect your investment.</li>
+
+            <li>A cryptocurrency is a digital currency, which is an alternative form of payment created using encryption algorithms. The use of encryption technologies means that cryptocurrencies function both as a currency and as a virtual accounting system. To use cryptocurrencies, you need a cryptocurrency wallet. These wallets can be software that is a cloud-based service or is stored on your computer or on your mobile device. The wallets are the tool through which you store your encryption keys that confirm your identity and link to your cryptocurrency.</li>
+
+            <li>Cryptocurrencies are still relatively new, and the market for these digital currencies is very volatile. Since cryptocurrencies don't need banks or any other third party to regulate them; they tend to be uninsured and are hard to convert into a form of tangible currency (such as US dollars or euros.) In addition, since cryptocurrencies are technology-based intangible assets, they can be hacked like any other intangible technology asset. Finally, since you store your cryptocurrencies in a digital wallet, if you lose your wallet (or access to it or to wallet backups), you have lost your entire cryptocurrency investment.</li>
         </ul>
 
-    <div>
-
-        <h2 style="font-size: 40px;">Bitcoin, blockchain... So what does it all mean?</h2>
-        <p style="font-size: 20px; color: rgb(38, 38, 39); font-weight: 700;">Let's start with some quick definitions. Blockchain is the technology that enables the existence of cryptocurrency (among other things). Bitcoin is the name of the most recognized cryptocurrency, the one for which blockchain technology, as we currently know it, was created. A cryptocurrency is a medium of exchange such as the US dollar, but is digital and uses cryptographic techniques and its protocol to verify the transfer of funds and control the creation of monetary units.</p>
-
-      <div class="blockchain">
-        <div>
-            <img src="https://www.pwc.com/us/en/industries/financial-services/images/intro.svg">
-        </div>
-        <div>
-            <h2 style="font-size: 40px; margin-left: 150px;">What is blockchain technology?</h2>
-            <p style="font-size: 20px; color: rgb(38, 38, 39); font-weight: 700; margin-left: 100px;">A blockchain is a decentralized ledger of all transactions across a peer-to-peer network. Using this technology, participants can confirm transactions without a need for a central clearing authority. Potential applications can include enterprise blockchain applications, sustainability, tokenization, fund transfers, supply chain tracking and many other areas.</p>
-        </div>
-        
-      </div>
-       
-
+        <img src="https://www.investopedia.com/thmb/RYd9C7xdsi1YM4MghfHfOYb_gxo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/TermDefinitions_crypto_final-940e93a6cb5341999a5d735fbf04fbfe.png" class="side-img">
     </div>
-
-   
-    <h2 style="font-size: 40px;">Blockchain’s benefits and unknowns</h2>
-    <div class="image">
-
-    <div class="box1">
-        <img src="https://www.pwc.com/gx/en/brand-simplified/picto-images-132/orange-for-pwc-only/picto-trust-orange.svg" style="margin-left: 90px;">
-        <p style="font-size: 20px; font-weight: bold; margin-left: 100px;">Benefits</p>
-        <ul style="list-style: square; line-height: 1.5; font-size: 25px;;" >
-            <li>Increased transparency</li>
-            <li>Accurate tracking</li>
-            <li>Permanent ledger</li>
-            <li>Cost reduction</li>
-        </ul>
-        </div>
- 
- 
-        <div >
-            <img src="https://www.pwc.com/gx/en/brand-simplified/picto-images-132/orange-for-pwc-only/picto-question-orang.svg" style="margin-left: 90px;">
-        <p style="font-size: 20px; font-weight: bold; margin-left: 100px;">Unknowns</p>
-        <ul style="list-style: square; line-height: 1.5; font-size: 25px;;" >
-            <li>Complex technology</li>
-            <li>Regulatory implication</li>
-            <li>Implementation challenges</li>
-            <li>Competing platforms</li>
-        </ul>
-    </div>
-</div>
-
-
-<section>
-    <img src="https://www.pwc.com/us/en/industries/financial-services/images/blockchain.svg">
 </section>
+
+<section class="section-area2">
+    <h2 class="subtitle">Follow these tips to protect your cryptocurrencies:</h2>
+
+    <ul class="content-list">
+        <li>Look before you leap! Before investing in a cryptocurrency, be sure you understand how it works, where it can be used, and how to exchange it. Read the webpages for the currency itself (such as Ethereum, Bitcoin or Litecoin) so that you fully understand how it works, and read independent articles on the cryptocurrencies you are considering as well.</li>
+
+        <li>Use a trustworthy wallet. It is going to take some research on your part to choose the right wallet for your needs. If you choose to manage your cryptocurrency wallet with a local application on your computer or mobile device, then you will need to protect this wallet at a level consistent with your investment. Just like you wouldn't carry a million dollars around in a paper bag, don't choose an unknown or lesser-known wallet to protect your cryptocurrency. You want to make sure that you use a trustworthy wallet.</li>
+
+        <li>Have a backup strategy. Think about what happens if your computer or mobile device (or wherever you store your wallet) is lost or stolen or if you don't otherwise have access to it. Without a backup strategy, you will have no way of getting your cryptocurrency back, and you could lose your investment.</li>
+    </ul>
+</section>
+
+<section class="section-area3">
+    <h2 class="subtitle">Bitcoin, blockchain... So what does it all mean?</h2>
+
+    <p class="text">Let's start with some quick definitions. Blockchain is the technology that enables the existence of cryptocurrency (among other things). Bitcoin is the name of the most recognized cryptocurrency, the one for which blockchain technology, as we currently know it, was created. A cryptocurrency is a medium of exchange such as the US dollar, but is digital and uses cryptographic techniques and its protocol to verify the transfer of funds and control the creation of monetary units.</p>
+
+    <div class="blockchain">
+        <img src="https://www.pwc.com/us/en/industries/financial-services/images/intro.svg">
+
+        <div class="block-info">
+            <h2 class="subtitle">What is blockchain technology?</h2>
+            <p class="text">A blockchain is a decentralized ledger of all transactions across a peer-to-peer network. Using this technology, participants can confirm transactions without a need for a central clearing authority. Potential applications can include enterprise blockchain applications, sustainability, tokenization, fund transfers, supply chain tracking and many other areas.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-area4">
+    <h2 class="subtitle">Blockchain’s benefits and unknowns</h2>
+
+    <div class="benefit-box">
+        <div class="box">
+            <img src="https://www.pwc.com/gx/en/brand-simplified/picto-images-132/orange-for-pwc-only/picto-trust-orange.svg">
+            <p class="box-title">Benefits</p>
+            <ul class="box-list">
+                <li>Increased transparency</li>
+                <li>Accurate tracking</li>
+                <li>Permanent ledger</li>
+                <li>Cost reduction</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <img src="https://www.pwc.com/gx/en/brand-simplified/picto-images-132/orange-for-pwc-only/picto-question-orang.svg">
+            <p class="box-title">Unknowns</p>
+            <ul class="box-list">
+                <li>Complex technology</li>
+                <li>Regulatory implication</li>
+                <li>Implementation challenges</li>
+                <li>Competing platforms</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section> <img src="https://www.pwc.com/us/en/industries/financial-services/images/blockchain.svg"> </section>
+
+</div> 
 
 <footer class="footer">
     <div class="footer-container">
@@ -195,8 +308,8 @@
 
     </div>
     <hr>
-  <p>Cryptous,1999</p>
+    <p class="footer-copy">Cryptous, 1999</p>
+</footer>
 
-  </footer>
 </body>
 </html>

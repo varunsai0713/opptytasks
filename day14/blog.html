@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        .head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #c08ef6;
+  padding: 10px 20px;
+}
+
+.head img {
+  width: 45px;
+  height: 45px;
+}
+.head h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: transparent;
+  background: linear-gradient(to right, #410e54, #eb23da);
+  background-clip: text;
+  
+}
+.buttons {
+    
+    margin-left: 1000px;
+    display: flex;
+    gap: 40px;
+    
+
+}
+.buttons button{
+    border-radius: 20px;
+    padding: 10px 20px;
+    border-style: none;
+    font-weight: bolder;
+}
+.buttons  a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.buttons button:hover{
+    background-color: #b8e2ec;  
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #c5d7ed; 
+    color: white;
+}
+
+
+.blog-section {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.blog-title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 50px;
+}
+
+.blog-card {
+    background-color: #efefef;
+    width: 300px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-card h3 {
+    margin: 15px 0 5px;
+    font-size: 20px;
+}
+
+.blog-card p {
+    font-size: 14px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    color: #2c2c2c;
+}
+
+.read-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+
+.learn-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 30px;
+    border: 1px solid #bbb;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: #d872f1;
+}
+
+.learn-btn:hover {
+    background-color: #f154cc;
+    
+}
+
+    </style>
+</head>
+<body>
+    
+ <section class="header">
+    <div class="head">
+  <img src="logo.png">
+  <h1>Cryptous</h1>
+
+  <div class="buttons">
+    <button><a href="#">SIGN UP</a></button>
+  <button><a href="#">SIGN IN</a></button>
+  </div>
+  </div>
+      
+</section>
+
+
+<section class="blog-section">
+
+    <h1 class="blog-title">Blog Posts</h1>
+   
+
+    <div class="blog-container">
+
+        <div class="blog-card">
+            <img src="https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog Image">
+            <h3>Crypto Market Trends 2025</h3>
+            <p>Stay ahead with the latest market insights and trends shaping the future of digital assets.</p>
+            <a href="#" class="read-btn">READ MORE</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://appinventiv.com/wp-content/uploads/2018/07/banner-blockchain-beyond-bitcoin-01.png" alt="Blog Image">
+            <h3>Blockchain in Real Business</h3>
+            <p>Discover how companies are using blockchain to build trust, automate processes, and scale fast.</p>
+            <a href="#" class="read-btn">READ MORE</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://images.pexels.com/photos/6771900/pexels-photo-6771900.jpeg" alt="Blog Image">
+            <h3>Beginner Guide to Crypto</h3>
+            <p>New to crypto? Learn the basics of investing safely, storing assets, and making smart decisions.</p>
+            <a href="#" class="read-btn">READ MORE</a>
+        </div>
+
+    </div>
+
+    <a href="#" class="learn-btn">LEARN MORE</a>
+
+</section>
+</body>
+</html>
