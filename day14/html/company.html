@@ -67,39 +67,64 @@
       
     }
 
-    .head {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  background-color: #c08ef6;
-  padding: 10px 20px;
+    .nav-container {
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background: linear-gradient(90deg, #250044, #640079, #990099);
 }
 
-.head img {
-  width: 45px;
-  height: 45px;
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.head h1 {
-  font-size: 28px;
-  font-weight: 700;
-  color: transparent;
-  background: linear-gradient(to right, #410e54, #eb23da);
-  background-clip: text;
-  
+.logo img {
+    width: 55px;
 }
 
-.head select {
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 15px;
-  border: none;
-  background: linear-gradient(to right, #855597, #eb23da);
-  color: rgb(5, 5, 5);
-  padding: 4px 10px;
-  cursor: pointer;
-  margin-left: 70px;
+.logo h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
 }
+
+
+.center {
+    display: flex;
+    gap: 40px;
+}
+
+.center a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+}
+
+
+.trade-btn {
+    padding: 10px 25px;
+    border: 2px solid #ff6f61;
+    background: transparent;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.trade-btn:hover {
+    background: #ff8bf7;
+    color: #000;
+}
+
 .section-title {
   text-align: center;
   font-size: 32px;
@@ -161,45 +186,25 @@
 
 <body>
   
-    <section class="header">
+   <header class="nav-container">
+    <div class="logo">
+        <img src="../images/logo.png" alt="Cryptous Logo">
+        <h1>Cryptous</h1>
+    </div>
 
-      <div class="head">
-  <img src="/day14/images/logo.png">
-  <h1>Welcome to Cryptous</h1>
+    <nav class="center">
+        <a href="/day14/html/home.html">Home</a>
+        <a href="/day14/html/company.html">Company</a>
+        <a href="/day14/html/about.html">About</a>
+        <a href="/day14/html/pricing.html">Pricing</a>
+        <a href="/day14/html/team.html">Team</a>
+        <a href="/day14/html/contact.html">Contact</a>
+        <a href="/day14/html/blog.html">Blog</a>
+    </nav>
 
-  <select class="company">
-    <option>Our Company</option>
-    <option>Who We Are</option>
-    <option> Mission & Vision</option>
-    <option>Our Team</option>
-  </select>
+    <button class="trade-btn">Trade Now</button>
+</header>
 
-  <select class="services">
-    <option>Our Services</option>
-    <option>Secure Wallet</option>
-    <option>Staking & Rewards</option>
-   </select>
-
-  <select class="products">
-    <option>Our Products</option>
-    <option>Web Platform</option>
-    <option>Mobile App</option>
-    <option>API Tools</option>
-  </select>
-
-  <select class="choose">
-    <option>Why Choose Us</option>
-    <option>High Security</option>
-    <option>Fast Transactions</option>
-    <option>24/7 Support</option>
-  </select>
-</div>
-
-
-
-
-    
-    </section>
     
 
     <section>

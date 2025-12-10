@@ -9,47 +9,65 @@
         body{
             background: linear-gradient(135deg, #02004a, #110753, #1a0f7a);
         }
-        .head {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  background-color: #c08ef6;
-  padding: 10px 20px;
-}
-
-.head img {
-  width: 45px;
-  height: 45px;
-}
-.head h1 {
-  font-size: 28px;
-  font-weight: 700;
-  color: transparent;
-  background: linear-gradient(to right, #410e54, #eb23da);
-  background-clip: text;
-  
-}
-.buttons {
-    
-    margin-left: 600px;
+        .nav-container {
+    width: 94%;
     display: flex;
-    gap: 100px;
-    
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background: linear-gradient(90deg, #250044, #640079, #990099);
+}
 
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
-.buttons button{
-    border-radius: 20px;
-    padding: 10px 20px;
-    border-style: none;
-    font-weight: bolder;
+
+.logo img {
+    width: 55px;
 }
-.buttons  a{
+
+.logo h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+}
+
+/* Center Navbar Links */
+.center {
+    display: flex;
+    gap: 40px;
+}
+
+.center a {
     text-decoration: none;
-    font-weight: bold;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
 }
-.buttons button:hover{
-    background-color: #b8e2ec;  
+
+/* Right Button */
+.trade-btn {
+    padding: 10px 25px;
+    border: 2px solid #ff6f61;
+    background: transparent;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+.trade-btn:hover {
+    background: #ff8bf7;
+    color: #000;
+}
+
+
 
 .hero {
   display: flex;
@@ -245,19 +263,24 @@
 </head>
 <body>
      
-    <section>
+    <header class="nav-container">
+    <div class="logo">
+        <img src="../images/logo.png" alt="Cryptous Logo">
+        <h1>Cryptous</h1>
+    </div>
 
-   <div class="head">
-  <img src="/day14/images/logo.png">
-  <h1>Cryptous</h1>
+    <nav class="center">
+        <a href="/day14/html/home.html">Home</a>
+        <a href="/day14/html/company.html">Company</a>
+        <a href="/day14/html/about.html">About</a>
+        <a href="/day14/html/pricing.html">Pricing</a>
+        <a href="/day14/html/team.html">Team</a>
+        <a href="/day14/html/contact.html">Contact</a>
+        <a href="/day14/html/blog.html">Blog</a>
+    </nav>
 
-  <div class="buttons">
-    <button><a href="#">Buy Crypto</a></button>
-  <button><a href="#">Exchange</a></button>
-  <button><a href="#">Wallet</a></button>
-  </div>
-  </div>
-    </section>
+    <button class="trade-btn">Trade Now</button>
+</header>
 
 
   <section class="hero">
