@@ -3,7 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>To-Do List</title>
-    
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #c9edfc;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+
+        .todo-container {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .input-section {
+            display: flex;
+            gap: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+        }
+
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        ul {
+            margin-top: 20px;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            list-style: none;
+        }
+
+        li button {
+            background: red;
+            color: white;
+            border: none;
+            padding: 4px 8px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,6 +69,34 @@
     <ul id="task-list"></ul>
 </div>
 
-<script src="first.js"></script>
+<script>
+
+function addTask() {
+    let input = document.getElementById("task-input");
+    let taskText = input.value;
+
+    if (taskText === "") {
+        alert("Enter a task");
+        return;
+    }
+
+    let li = document.createElement("li");
+    li.textContent = taskText;
+
+    let deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "X";
+
+    deleteBtn.onclick = function () {
+        li.remove();
+    };
+
+    li.appendChild(deleteBtn);
+    document.getElementById("task-list").appendChild(li);
+
+    input.value = "";
+}
+
+</script>
+
 </body>
 </html>
