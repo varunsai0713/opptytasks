@@ -92,7 +92,7 @@ function addTask() {
     let li = document.createElement("li");
     li.textContent = taskText;
 
-    // ✔ NEW: toggle completed task
+    
     li.onclick = function () {
         li.classList.toggle("completed");
     };
@@ -101,7 +101,7 @@ function addTask() {
     deleteBtn.textContent = "X";
 
     deleteBtn.onclick = function (event) {
-        event.stopPropagation(); // Prevent marking completed when deleting
+        event.stopPropagation(); 
         li.remove();
     };
 
