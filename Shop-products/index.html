@@ -1,29 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Bridge | Shop Products</title>
-     <link rel="shortcut icon" type="image/x-icon" href="https://demo.qodeinteractive.com/bridge65/wp-content/themes/bridge/img/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Bridge Style Header & Slider</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://demo.qodeinteractive.com/bridge65/wp-content/themes/bridge/img/favicon.ico">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- HEADER -->
 <header class="header">
-    <div class="container header-flex">
-        <div class="logo-box">
-            <img src="https://demo.qodeinteractive.com/bridge65/wp-content/uploads/2015/02/logo-retina.png" alt="Logo">
-        </div>
-        <nav class="nav">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Shop</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-        </nav>
+  <div class="header-inner">
+
+    <div class="logo">
+      <img src="https://demo.qodeinteractive.com/bridge65/wp-content/uploads/2015/02/logo-retina.png" alt="logo">
     </div>
+
+    <nav class="nav">
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact</a>
+    </nav>
+
+  </div>
 </header>
 
+<!-- SLIDER -->
+<section class="hero-slider">
+
+  <div class="slides">
+    <div class="slide active" style="background-image:url('./assests/image-gallery-1.jpg');"></div>
+    <div class="slide" style="background-image:url('./assests/image-gallery-2.jpg');"></div>
+    
+  </div>
+
+  <button class="arrow left">&#10094;</button>
+  <button class="arrow right">&#10095;</button>
+
+</section>
+
+<script>
+  const slides = document.querySelectorAll(".slide");
+  const next = document.querySelector(".right");
+  const prev = document.querySelector(".left");
+
+  let index = 0;
+
+  function showSlide(i){
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[i].classList.add("active");
+  }
+
+  next.addEventListener("click", () => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  });
+
+  prev.addEventListener("click", () => {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  });
+</script>
+<section class="about-bridge">
+  <div class="about-title">
+    <span class="line"></span>
+    <h2>ABOUT BRIDGE</h2>
+    <span class="line"></span>
+  </div>
+
+  <p class="about-text">
+    Lorem ipsum dolor sit amet, feugiat vivendum id ius. Cu ancillae noluisse
+    consectetur mel. Id eos aperiam admodum lobortis, ponderum disputando
+    efficiantur has eu, quod harum pertinax id eum. Soluta nominavi pro ut,
+    sit ut utroque.
+  </p>
+</section>
+<section class="sale-section">
+
+  <div class="sale-box">
+    <img src="./assests/interactive-banner-1.jpg" alt="">
+    <div class="overlay">
+      <h2>SALE<br><span>30 %</span></h2>
+    </div>
+  </div>
+
+  <div class="sale-box">
+    <img src="./assests/interactive-banner-2.jpg" alt="">
+     <div class="overlay">
+      <h2>SALE<br><span>30 %</span></h2>
+    </div>
+  </div>
+
+  <div class="sale-box">
+    <img src="./assests/interactive-banner-3.jpg" alt="">
+     <div class="overlay">
+      <h2>SALE<br><span>30 %</span></h2>
+    </div>
+  </div>
+
+</section>
 
 </body>
 </html>
