@@ -19,6 +19,7 @@
 
 .top-left span {
   font-weight: bold;
+  color: #403C50;
 }
 
 
@@ -34,7 +35,7 @@
 .top-right a {
   margin-right: 20px;
   text-decoration: none;
-  color: #000;
+  color: #403C50;
   font-weight: bold;
 }
 .top-right a:hover{
@@ -44,6 +45,7 @@
 .top-right span {
   font-weight: bold;
   margin-right: 30px;
+  color: #403C50;
 }
 .number:hover{
     color: #FF8C82;
@@ -163,6 +165,7 @@
 .reasons-image img{
    width: 480px;
    margin-top: 150px;
+   margin-left: 130px;
 }
 .reasons-text h1{
   font-size: 40px;
@@ -171,6 +174,9 @@
   font-size: 20px;
   font-family: "poppins";
 }
+.reasons-text{
+  margin-right: 200px;
+}
 .reasons-text p{
   color: #9FA0B9;
   font-family: "poppins";
@@ -178,4 +184,81 @@
 }
 .reasons-text img{
   width: 30px;
+}
+.Professional{
+  background-image: url("./images/section-background-2.jpeg");
+  padding: 170px;
+}
+.Featured h1{
+  font-family: "poppins";
+  font-size: 50px;
+  text-align: center;
+  color: #322E43;
+}
+.Featured p{
+  font-family: "poppins";
+  font-size: 19px;
+  text-align: center;
+  margin-top: -20px;
+  color: #9FA0B9;
+}
+.service{
+  background-color: #fff;
+  border-radius: 5px; 
+}
+.service img{
+  width: 250px;
+}
+.service h3{
+ background-color: #fff;
+ font-family: "poppins";
+ color: #322E43;
+ margin-left: 5px;
+}
+.service p{
+  background-color: #fff;
+  color: #9FA0A5;
+  font-family: "poppins";
+  margin-top: -15px;
+  padding: 10px;
+  
+}
+.service-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+.headpara{
+  padding: 10px;
+  height: 180px;
+}
+.video-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+.video-text h1{
+  font-family: "poppins";
+  font-size: 40px;
+}
+.video-text p{
+  font-family: "poppins";
+  font-size: 19px;
+  color: #9FA0A5;
+  line-height: 34px;
+}
+.video-text button{
+    padding: 20px 40px 20px 40px;
+    border-radius: 40px;
+    background-color: #6464F9;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: transparent;
+}
+.video-text button:hover{
+    background-color: #FF7182;
 }
