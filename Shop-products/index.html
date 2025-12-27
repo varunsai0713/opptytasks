@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bridge Style Header & Slider</title>
+  <title>Bridge</title>
   <link rel="shortcut icon" type="image/x-icon" href="https://demo.qodeinteractive.com/bridge65/wp-content/themes/bridge/img/favicon.ico">
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
 
-<!-- HEADER -->
+
 <header class="header">
   <div class="header-inner">
 
@@ -27,42 +30,39 @@
   </div>
 </header>
 
-<!-- SLIDER -->
+
 <section class="hero-slider">
 
-  <div class="slides">
-    <div class="slide active" style="background-image:url('./assests/image-gallery-1.jpg');"></div>
-    <div class="slide" style="background-image:url('./assests/image-gallery-2.jpg');"></div>
-    
-  </div>
+  <div id="carouselExample" class="carousel slide carousel-fade">
 
-  <button class="arrow left">&#10094;</button>
-  <button class="arrow right">&#10095;</button>
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="slide-bg" style="background-image:url('./assests/image-gallery-1.jpg');"></div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="slide-bg" style="background-image:url('./assests/image-gallery-2.jpg');"></div>
+      </div>
+
+    </div>
+
+    
+    <button class="carousel-control-prev" type="button"
+      data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    
+    <button class="carousel-control-next" type="button"
+      data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
 
 </section>
 
-<script>
-  const slides = document.querySelectorAll(".slide");
-  const next = document.querySelector(".right");
-  const prev = document.querySelector(".left");
-
-  let index = 0;
-
-  function showSlide(i){
-    slides.forEach(slide => slide.classList.remove("active"));
-    slides[i].classList.add("active");
-  }
-
-  next.addEventListener("click", () => {
-    index = (index + 1) % slides.length;
-    showSlide(index);
-  });
-
-  prev.addEventListener("click", () => {
-    index = (index - 1 + slides.length) % slides.length;
-    showSlide(index);
-  });
-</script>
 <section class="about-bridge">
   <div class="about-title">
     <span class="line"></span>
@@ -101,6 +101,38 @@
   </div>
 
 </section>
+<section>
+  <div class="about-title1">
+    <span class="line1"></span>
+    <h2>NEW ARRIVALS</h2>
+    <span class="line1"></span>
+  </div>
+  <div class="glass">
+    <div >
+      <img src="./assests/glass1.jpg">
+      <h4>SUNGLASSES CASE</h4>
+      <p>$12.00</p>
+      </div>
 
+      <div>
+        <img src="./assests/glass1.jpg">
+      <h4>SUNGLASSES CASE</h4>
+      <p>$12.00</p>
+      </div>
+
+     <div>
+       <img src="./assests/glass1.jpg">
+      <h4>SUNGLASSES CASE</h4>
+      <p>$12.00</p>
+     </div>
+
+      <div>
+        <img src="./assests/glass1.jpg">
+      <h4>SUNGLASSES CASE</h4>
+      <p>$12.00</p>
+      </div>
+    
+  </div>
+</section>
 </body>
 </html>
