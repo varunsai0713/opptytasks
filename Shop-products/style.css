@@ -343,6 +343,7 @@ body{
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 .client img{
   width: 150px;
@@ -358,7 +359,7 @@ body{
   border-top: 1px solid #eee;
 }
 
-/* LEFT MENU */
+
 .footer-left a{
   margin-right: 20px;
   text-decoration: none;
@@ -370,7 +371,7 @@ body{
   color: #3b2a34;
 }
 
-/* CENTER SOCIAL ICONS */
+
 .footer-center{
   display: flex;
   gap: 15px;
