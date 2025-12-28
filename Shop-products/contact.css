@@ -1,0 +1,155 @@
+body{
+  margin: 0;
+  font-family: "Merriweather";
+  background: #fff;   /* side grey like Bridge */
+  
+}
+
+
+.header{
+  background: #fff;
+  padding: 35px 0 25px;
+  /* max-width: 1200px;      */
+  /* margin: 0 auto;        */
+}
+
+
+.header-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img{
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+.nav{
+  display: flex;
+  gap: 40px;
+}
+
+.nav a{
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #b3aeb0;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover,
+.nav a.active{
+  color: #5a4a55;
+}
+.contact-image img{
+    margin-left: 80px;
+}
+.get{
+    text-align: center;
+    color: #4C3D48;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.lorem {
+    text-align: center;
+    color: #9898A5;
+}
+.first-name{
+    background-color: #F6F6F6;
+    margin-left: 200px;
+    padding: 10px 40px;
+    border: transparent;
+    outline: none;
+}
+
+.last-name{
+    background-color: #F6F6F6;
+    margin-left: 50px;
+    padding: 10px 40px;
+     border: transparent;
+     outline: none;
+}
+.email{
+    background-color: #F6F6F6;
+    margin-left: 50px;
+    padding: 10px 40px;
+    border: transparent;
+    outline: none;
+}
+.message{
+    background-color: #F6F6F6;
+    margin-left: 200px;
+    padding: 40px 640px 140px 40px;
+    border: transparent;
+    outline: none;
+}
+.Contact-btn {
+    margin-left: 520px;
+    background-color: #4A3B46;
+    color: white;
+    padding: 9px 30px;
+    outline: none;
+    border: transparent;
+    font-family: "Merriweather";
+    cursor: pointer;
+   
+}
+.Contact-btn:hover{
+    background-color: #A4939D;
+    color: #333;
+    
+}
+.button{
+    padding: 30px;
+}
+.footer-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  background: #F6F6F6;
+  border-top: 1px solid #eee;
+}
+
+/* LEFT MENU */
+.footer-left a{
+  margin-right: 20px;
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 15px;
+}
+
+.footer-left a:hover{
+  color: #3b2a34;
+}
+
+/* CENTER SOCIAL ICONS */
+.footer-center{
+  display: flex;
+  gap: 15px;
+}
+
+.footer-center a{
+  width: 25px;
+  height: 25px;
+  background: #cfcfcf;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.footer-center a:hover{
+  background: #3b2a34;
+}
+
+/* RIGHT COPYRIGHT */
+.footer-right p{
+  color: #b3b3b3;
+  font-size: 15px;
+}

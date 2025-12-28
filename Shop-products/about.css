@@ -1,0 +1,119 @@
+/* 🔹 ADDED: side background color */
+body{
+  margin: 0;
+  font-family: "Merriweather";
+  background: #fff;   /* side grey like Bridge */
+  
+}
+
+
+.header{
+  background: #fff;
+  padding: 35px 0 25px;
+  /* max-width: 1200px;      */
+  /* margin: 0 auto;        */
+}
+
+
+.header-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img{
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+.nav{
+  display: flex;
+  gap: 40px;
+}
+
+.nav a{
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #b3aeb0;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover,
+.nav a.active{
+  color: #5a4a55;
+}
+.about img{
+margin-left: 80px;
+
+}
+.para p{
+  font-size: 16px;
+  color: #4C3D48;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 70px;
+}
+.para2 p{
+  font-size: 15px;
+  color: #989898;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 40px;
+  
+}
+
+.para-image img{
+  margin-left: 530px;
+  margin-top: 40px;
+}
+.footer-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  background: #F6F6F6;
+  border-top: 1px solid #eee;
+}
+
+/* LEFT MENU */
+.footer-left a{
+  margin-right: 20px;
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 15px;
+}
+
+.footer-left a:hover{
+  color: #3b2a34;
+}
+
+/* CENTER SOCIAL ICONS */
+.footer-center{
+  display: flex;
+  gap: 15px;
+}
+
+.footer-center a{
+  width: 25px;
+  height: 25px;
+  background: #cfcfcf;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.footer-center a:hover{
+  background: #3b2a34;
+}
+
+/* RIGHT COPYRIGHT */
+.footer-right p{
+  color: #b3b3b3;
+  font-size: 15px;
+}
