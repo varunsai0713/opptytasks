@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+body{
+  font-family: "meriweather";
+}
 
 .header{
   background: #fff;
@@ -188,8 +190,108 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
+
 .glass img{
   width: 200px;
   height: 200px;
+}
+
+.about-glass{
+  position: relative;
+  width: 250px;
+}
+
+.about-glass img{
+  width: 250px;
+  height: 250px;
+  display: block;
+}
+
+.about-glass p{
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.about-glass p:hover{
+  color: #7c5a65;
+}
+
+.about-glass a{
+  text-decoration: none;
+  color: #333;
+}
+
+.about-glass a:hover{
+  color: #7c5a65;
+}
+
+
+.sale{
+  position:absolute;          
+  top: 10px;
+  left: 15px;
+  background-color: #3b2a34;  
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 10;
+}
+
+
+.hover-cart{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: rgba(59, 42, 52, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+.hover-cart button{
+  background-color: #3b2a34;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 12px 22px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.hover-cart button:hover{
+  background-color: #3b2a34;
+  color: #fff;
+}
+
+
+.about-glass:hover .hover-cart{
+  opacity: 1;
+}
+.glass-bg{
+  background: url('./assests/glassbg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 1200px;
+  margin-left: 40px;
+ 
+}
+.glassbground{
+  margin-left: 600px;
+  padding-top: 100px;
 }
