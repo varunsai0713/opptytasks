@@ -36,16 +36,53 @@
     <p class="lorem">Lorem ipsum dolor sit amet, feugait vivendum id ius. Cu ancillae noluisse consectetuer mel. Id eos aperiam admodum lobortis, ponderum<br> disputando efficiantur has eu, quod harum pertinax id eum. Soluta nominavi pro ut, sit ut utroque.</p>
 </div>
 </section>
-<section>
-    <form>
-        <input type="text" placeholder="First Name*" class="first-name" required >
-        <input type="text" placeholder="Last Name*" class="last-name" required>
-        <input type="email" placeholder="Email*" class="email" required><br><br>
-        <input type="text" placeholder="Message*" class="message" required>
-    </form><br><br>
-    <div class="button">
-        <button class="Contact-btn">CONTACT US</button>
+<section class="form">
+
+  <form id="contactForm">
+    <input type="text" placeholder="First Name*" class="first-name">
+    <input type="text" placeholder="Last Name*" class="last-name">
+    <input type="email" placeholder="Email*" class="email"><br><br>
+
+    <input type="text" placeholder="Message*" class="message">
+
+    <p id="error-msg">Please fill the required field.</p>
+  </form>
+
+  <div class="button">
+    <button class="Contact-btn">CONTACT US</button>
+  </div>
+
+  <div id="success-msg">
+    ✔ YOUR MESSAGE WAS SENT SUCCESSFULLY. THANKS.
+  </div>
+
+  <script>
+    const btn = document.querySelector(".Contact-btn");
+    const form = document.getElementById("contactForm");
+    const errorMsg = document.getElementById("error-msg");
+    const successMsg = document.getElementById("success-msg");
+
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const first = document.querySelector(".first-name").value.trim();
+      const last = document.querySelector(".last-name").value.trim();
+      const email = document.querySelector(".email").value.trim();
+      const message = document.querySelector(".message").value.trim();
+
+      if (first === "" || last === "" || email === "" || message === "") {
+        errorMsg.style.display = "block";
+        successMsg.style.display = "none";
+      } else {
+        errorMsg.style.display = "none";
+        successMsg.style.display = "block";
+        form.reset();
+      }
+    });
+  </script>
+
 </section>
+
 <footer class="footer-bottom">
 
   <div class="footer-left">
@@ -65,7 +102,7 @@
   </div>
 
   <div class="footer-right">
-    <p>© Copyright Qode Interactive</p>
+    <p>© Copyright <a href="https://qodeinteractive.com/?_gl=1%2Ajetyag%2A_gcl_au%2AMTMzOTA0MjgzMS4xNzY1Mjc3NjEw" target="_blank">Qode Interactive</a></p>
   </div>
 
 </footer>

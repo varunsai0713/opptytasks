@@ -341,15 +341,37 @@ body{
 .client{
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 40px;
-  cursor: pointer;
 }
+
+.client-track{
+  display: flex;
+  gap: 80px;
+  animation: scrollBrands 10s linear infinite;
+}
+
 .client img{
   width: 150px;
- color: #F6F6F6;
-  
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
 }
+
+
+.client img:hover{
+  opacity: 1;
+}
+
+
+@keyframes scrollBrands {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .footer-bottom{
   display: flex;
   align-items: center;
@@ -398,4 +420,12 @@ body{
 .footer-right p{
   color: #b3b3b3;
   font-size: 15px;
+}
+.footer-right a{
+  color: #b3b3b3;
+  font-size: 15px;
+  text-decoration: none ;
+}
+.footer-right a:hover{
+  color: #3b2a34;
 }
