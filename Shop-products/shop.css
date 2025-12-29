@@ -1,7 +1,7 @@
 body{
   margin: 0;
   font-family: "Merriweather";
-  background: #fff;   /* side grey like Bridge */
+  background: #fff;   
   
 }
 
@@ -176,7 +176,7 @@ body{
   color: #3b2a34;
 }
 
-/* CENTER SOCIAL ICONS */
+
 .footer-center{
   display: flex;
   gap: 15px;
@@ -199,8 +199,16 @@ body{
   background: #3b2a34;
 }
 
-/* RIGHT COPYRIGHT */
+
 .footer-right p{
   color: #b3b3b3;
   font-size: 15px;
+}
+.footer-right a{
+  color: #b3b3b3;
+  font-size: 15px;
+  text-decoration: none ;
+}
+.footer-right a:hover{
+  color: #3b2a34;
 }
