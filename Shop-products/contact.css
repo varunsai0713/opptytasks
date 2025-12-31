@@ -219,4 +219,9 @@ body{
   color: white;
   padding: 10px 30px;
   cursor: pointer;
+  border: none;
+}
+.location:hover{
+  background-color: #A4939D;
+  
 }
