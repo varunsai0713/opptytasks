@@ -210,3 +210,13 @@ body{
   opacity: 1;
   visibility: visible;
 }
+.map{
+  text-align: center;
+  padding-bottom: 30px;
+}
+.location{
+  background-color:#3b2a34;
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+}
