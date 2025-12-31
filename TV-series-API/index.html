@@ -7,28 +7,31 @@
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <h1 class="logo">🎬 TV Series Hub</h1>
-  <p class="tagline">Discover your favorite TV shows</p>
-</header>
+  <!-- HEADER -->
+  <header class="header">
+    <h1>🎬 TV Series Search App</h1>
+    <p>Search IMDb-style TV series details</p>
+  </header>
 
-<!-- MAIN CONTENT -->
-<main class="main">
-  <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Search TV series..." onkeyup="searchSeries()">
-  </div>
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <div class="search-box">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Enter TV series name..."
+      >
+      <button onclick="searchSeries()">Search</button>
+    </div>
 
-  <section class="series-container" id="seriesContainer">
-    <!-- Cards added by JS -->
-  </section>
-</main>
+    <div id="seriesContainer"></div>
+  </main>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <p>© 2025 TV Series Hub | Built with HTML, CSS & JavaScript</p>
-</footer>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 TV Series App | HTML • CSS • JavaScript • OMDb API</p>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

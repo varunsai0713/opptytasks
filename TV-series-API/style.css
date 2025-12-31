@@ -2,104 +2,105 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
   background: linear-gradient(120deg, #141e30, #243b55);
-  color: #fff;
+  color: #ffffff;
+  min-height: 100vh;
 }
 
 /* HEADER */
 .header {
   text-align: center;
-  padding: 40px;
+  padding: 40px 20px;
   animation: slideDown 1s ease;
 }
 
-.logo {
-  font-size: 40px;
-  letter-spacing: 2px;
+.header h1 {
+  font-size: 38px;
 }
 
-.tagline {
+.header p {
   opacity: 0.8;
-  margin-top: 8px;
+  margin-top: 5px;
 }
 
-/* SEARCH */
-.search-box {
+/* MAIN */
+.main {
   text-align: center;
-  margin: 30px 0;
+  padding: 30px 20px;
+}
+
+.search-box {
+  margin-bottom: 30px;
 }
 
 .search-box input {
-  width: 300px;
   padding: 12px;
+  width: 260px;
   border-radius: 25px;
   border: none;
   font-size: 16px;
   outline: none;
-  transition: transform 0.3s;
 }
 
-.search-box input:focus {
+.search-box button {
+  padding: 12px 22px;
+  margin-left: 10px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background: #ffdd59;
+  font-weight: bold;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.search-box button:hover {
+  background: #feca57;
   transform: scale(1.05);
-}
-
-/* SERIES GRID */
-.series-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  padding: 20px 60px;
 }
 
 /* CARD */
 .card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 20px;
+  width: 65%;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(10px);
-  transition: transform 0.4s, box-shadow 0.4s;
   animation: fadeUp 0.8s ease;
 }
 
-.card:hover {
-  transform: translateY(-12px) scale(1.02);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
-}
-
 .card h2 {
-  margin-bottom: 10px;
   color: #ffdd59;
-}
-
-.card p {
-  font-size: 14px;
-  line-height: 1.6;
+  margin-bottom: 10px;
 }
 
 .rating {
-  margin: 8px 0;
-  font-weight: bold;
   color: #1dd1a1;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.card p {
+  line-height: 1.6;
 }
 
 /* FOOTER */
 .footer {
   text-align: center;
   padding: 20px;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.35);
   margin-top: 40px;
-  font-size: 14px;
 }
 
 /* ANIMATIONS */
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(25px);
   }
   to {
     opacity: 1;
@@ -110,7 +111,7 @@ body {
 @keyframes slideDown {
   from {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(-25px);
   }
   to {
     opacity: 1;
