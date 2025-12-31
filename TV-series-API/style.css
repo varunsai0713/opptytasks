@@ -2,119 +2,154 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  background: linear-gradient(120deg, #141e30, #243b55);
-  color: #ffffff;
+  background: radial-gradient(circle at top, #1b2a41, #0b132b);
+  color: #fff;
   min-height: 100vh;
 }
 
-/* HEADER */
-.header {
+/* HERO SECTION */
+.hero {
   text-align: center;
-  padding: 40px 20px;
-  animation: slideDown 1s ease;
+  padding: 70px 20px;
+  animation: heroFade 1.5s ease;
 }
 
-.header h1 {
-  font-size: 38px;
+/* Animated gradient title */
+.title {
+  font-size: 44px;
+  background: linear-gradient(90deg, #ffdd59, #1dd1a1, #54a0ff);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientMove 4s infinite linear;
 }
 
-.header p {
+.subtitle {
   opacity: 0.8;
-  margin-top: 5px;
+  margin: 12px 0 30px;
 }
 
-/* MAIN */
-.main {
-  text-align: center;
-  padding: 30px 20px;
-}
-
+/* SEARCH */
 .search-box {
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .search-box input {
-  padding: 12px;
-  width: 260px;
-  border-radius: 25px;
+  padding: 14px 20px;
+  width: 280px;
+  border-radius: 30px;
   border: none;
   font-size: 16px;
   outline: none;
+  transition: transform 0.3s;
 }
 
-.search-box button {
-  padding: 12px 22px;
-  margin-left: 10px;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
-  background: #ffdd59;
-  font-weight: bold;
-  transition: transform 0.3s, background 0.3s;
-}
-
-.search-box button:hover {
-  background: #feca57;
+.search-box input:focus {
   transform: scale(1.05);
 }
 
-/* CARD */
+/* GLOW BUTTON */
+.search-box button {
+  padding: 14px 28px;
+  border-radius: 30px;
+  border: none;
+  background: #ffdd59;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255,221,89,0.6);
+  animation: pulseGlow 2s infinite;
+}
+
+.search-box button:hover {
+  transform: scale(1.1);
+}
+
+/* MESSAGE */
+#message {
+  margin-top: 20px;
+  animation: fadeUp 0.6s ease;
+}
+
+/* RESULT CARD */
 .card {
   width: 65%;
-  margin: 30px auto;
-  padding: 25px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(10px);
-  animation: fadeUp 0.8s ease;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  animation: cardEnter 0.9s ease;
+  transform-style: preserve-3d;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card:hover {
+  transform: rotateY(6deg) rotateX(6deg) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4);
 }
 
 .card h2 {
   color: #ffdd59;
-  margin-bottom: 10px;
 }
 
 .rating {
   color: #1dd1a1;
   font-weight: bold;
-  margin: 8px 0;
+  margin: 10px 0;
 }
 
-.card p {
-  line-height: 1.6;
+/* LOADER */
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255,255,255,0.2);
+  border-top: 5px solid #ffdd59;
+  border-radius: 50%;
+  margin: 40px auto;
+  animation: spin 1s linear infinite;
 }
 
 /* FOOTER */
 .footer {
   text-align: center;
   padding: 20px;
-  background: rgba(0,0,0,0.35);
-  margin-top: 40px;
+  background: rgba(0,0,0,0.4);
+  animation: fadeUp 1.5s ease;
 }
 
 /* ANIMATIONS */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@keyframes heroFade {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes cardEnter {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 15px rgba(255,221,89,0.6); }
+  50% { box-shadow: 0 0 30px rgba(255,221,89,1); }
+  100% { box-shadow: 0 0 15px rgba(255,221,89,0.6); }
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
 }

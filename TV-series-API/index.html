@@ -7,14 +7,11 @@
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <h1>🎬 TV Series Search App</h1>
-    <p>Search IMDb-style TV series details</p>
-  </header>
+  <!-- HEADER / HERO -->
+  <header class="hero">
+    <h1 class="title">🎬 TV Series Search App</h1>
+    <p class="subtitle">Search IMDb-style TV series details</p>
 
-  <!-- MAIN CONTENT -->
-  <main class="main">
     <div class="search-box">
       <input
         type="text"
@@ -24,6 +21,11 @@
       <button onclick="searchSeries()">Search</button>
     </div>
 
+    <p id="message"></p>
+  </header>
+
+  <!-- RESULT SECTION -->
+  <main>
     <div id="seriesContainer"></div>
   </main>
 
