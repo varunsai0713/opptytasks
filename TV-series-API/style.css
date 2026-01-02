@@ -11,14 +11,14 @@ body {
   min-height: 100vh;
 }
 
-/* HERO SECTION */
+
 .hero {
   text-align: center;
   padding: 70px 20px;
   animation: heroFade 1.5s ease;
 }
 
-/* Animated gradient title */
+
 .title {
   font-size: 44px;
   background: linear-gradient(90deg, #ffdd59, #1dd1a1, #54a0ff);
@@ -33,7 +33,7 @@ body {
   margin: 12px 0 30px;
 }
 
-/* SEARCH */
+
 .search-box {
   display: flex;
   justify-content: center;
@@ -54,7 +54,7 @@ body {
   transform: scale(1.05);
 }
 
-/* GLOW BUTTON */
+
 .search-box button {
   padding: 14px 28px;
   border-radius: 30px;
@@ -70,22 +70,20 @@ body {
   transform: scale(1.1);
 }
 
-/* MESSAGE */
+
 #message {
   margin-top: 20px;
   animation: fadeUp 0.6s ease;
 }
 
-/* RESULT CARD */
+
 .card {
   width: 65%;
   margin: 50px auto;
   padding: 30px;
   border-radius: 20px;
   background: rgba(255,255,255,0.12);
-  backdrop-filter: blur(12px);
   animation: cardEnter 0.9s ease;
-  transform-style: preserve-3d;
   transition: transform 0.4s, box-shadow 0.4s;
 }
 
@@ -104,7 +102,7 @@ body {
   margin: 10px 0;
 }
 
-/* LOADER */
+
 .loader {
   width: 50px;
   height: 50px;
@@ -115,7 +113,7 @@ body {
   animation: spin 1s linear infinite;
 }
 
-/* FOOTER */
+
 .footer {
   text-align: center;
   padding: 20px;
@@ -123,7 +121,6 @@ body {
   animation: fadeUp 1.5s ease;
 }
 
-/* ANIMATIONS */
 @keyframes spin {
   to { transform: rotate(360deg); }
 }

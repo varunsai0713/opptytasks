@@ -14,7 +14,7 @@ function searchSeries() {
     return;
   }
 
-  // Show loader animation
+  
   container.innerHTML = `<div class="loader"></div>`;
 
   fetch(`${API_URL}?t=${seriesName}&type=series&apikey=${API_KEY}`)
