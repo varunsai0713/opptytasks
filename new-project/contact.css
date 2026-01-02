@@ -1,0 +1,168 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#111;
+  color:#fff;
+}
+
+/* HEADER */
+.header{
+  background:#000;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+}
+
+.logo{
+  color:red;
+  font-size:28px;
+  font-weight:bold;
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.nav a{
+  color:white;
+  text-decoration:none;
+  font-size:15px;
+}
+
+.signup{
+  border:1px solid red;
+  padding:6px 14px;
+  border-radius:4px;
+}
+.signup:hover{
+  background:red;
+}
+
+.login{
+  background:red;
+  padding:6px 14px;
+  border-radius:4px;
+}
+.login:hover{
+  background:#e60000;
+}
+
+.search-input{
+  padding:6px 10px;
+  background:#111;
+  border:1px solid #444;
+  color:white;
+  border-radius:4px;
+  outline:none;
+  width:140px;
+}
+
+/* CONTACT SECTION */
+.contact-section{
+  padding:80px 40px;
+  display:flex;
+  justify-content:center;
+}
+
+.contact-box{
+  background:#000;
+  padding:40px;
+  width:100%;
+  max-width:500px;
+  border-radius:8px;
+}
+
+.contact-box h1{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.contact-box p{
+  color:#aaa;
+  margin-bottom:25px;
+}
+
+.contact-form{
+  display:flex;
+  flex-direction:column;
+}
+
+.contact-form input,
+.contact-form textarea{
+  margin-bottom:15px;
+  padding:12px;
+  background:#111;
+  border:1px solid #444;
+  color:white;
+  border-radius:4px;
+  outline:none;
+}
+
+.contact-form textarea{
+  height:120px;
+  resize:none;
+}
+
+.contact-form button{
+  background:red;
+  border:none;
+  padding:12px;
+  color:white;
+  font-size:16px;
+  border-radius:4px;
+  cursor:pointer;
+}
+.contact-form button:hover{
+  background:#e60000;
+}
+
+/* FOOTER */
+.footer{
+  background:#000;
+  padding:40px;
+  color:#999;
+  font-size:14px;
+}
+
+.footer-call{
+  margin-bottom:25px;
+}
+
+.footer-call span{
+  color:#fff;
+}
+
+.footer-links{
+  display:flex;
+  gap:60px;
+  flex-wrap:wrap;
+}
+
+.footer-links ul{
+  list-style:none;
+}
+
+.footer-links a{
+  color:#999;
+  text-decoration:none;
+  display:block;
+  margin-bottom:10px;
+}
+
+.footer-links a:hover{
+  text-decoration:underline;
+}
+
+.footer-brand{
+  margin-top:30px;
+}
