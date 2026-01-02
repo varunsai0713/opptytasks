@@ -26,6 +26,7 @@ loadMovies(trending, "trending");
 loadMovies(popular, "popular");
 
 
+
 const API_KEY = "ee9aa55b";
 const API_URL = "https://www.omdbapi.com/";
 
