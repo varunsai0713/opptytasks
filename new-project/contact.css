@@ -10,7 +10,7 @@ body{
   color:#fff;
 }
 
-/* HEADER */
+
 .header{
   background:#000;
   padding:15px 40px;
@@ -67,7 +67,7 @@ body{
   width:140px;
 }
 
-/* CONTACT SECTION */
+
 .contact-section{
   padding:80px 40px;
   display:flex;
@@ -126,12 +126,12 @@ body{
   background:#e60000;
 }
 
-/* FOOTER */
+
 .footer{
   background:#000;
   padding:40px;
   color:#999;
-  font-size:14px;
+  font-size:16px;
 }
 
 .footer-call{
@@ -146,6 +146,7 @@ body{
   display:flex;
   gap:60px;
   flex-wrap:wrap;
+  justify-content: space-around;
 }
 
 .footer-links ul{
