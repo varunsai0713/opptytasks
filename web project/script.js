@@ -1,4 +1,4 @@
-/* MAP */
+
 function openMap() {
   const address =
     "108/43 Vijaya Lakshmi Enclave 1st Floor H No 2 PJR Enclave Rd Gangaram ICRISAT Colony Hyderabad Telangana 500050";
@@ -11,7 +11,7 @@ function openMap() {
 }
 
 
-/* TODO */
+
 let tasks = [];
 
 function addTask() {
@@ -44,7 +44,7 @@ function clearAllTasks() {
   renderTasks();
 }
 
-/* TIMER */
+
 let seconds = 0;
 let running = true;
 
@@ -72,7 +72,7 @@ function resetTimer() {
   updateTimer();
 }
 
-/* FORM */
+
 function submitForm() {
   let valid = true;
   document.getElementById("nameError").innerText = "";
