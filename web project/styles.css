@@ -1,0 +1,177 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 10px;
+}
+
+.header {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.header nav a {
+  margin: 0 10px;
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+.section {
+  background: #fff;
+  padding: 20px;
+  margin-top: 30px;
+  border: 1px solid #ddd;
+}
+
+.about {
+  display: flex;
+  gap: 30px;
+}
+
+.about-left {
+  width: 60%;
+}
+
+.about-right {
+  width: 40%;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 220px;
+  border: 1px solid #ccc;
+}
+
+.two-column {
+  display: flex;
+  gap: 40px;
+}
+
+.box {
+  width: 50%;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 6px;
+}
+
+.note {
+  background: #fff3cd;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.timer-display {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.contact {
+  width: 50%;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin: 5px 0;
+  padding: 6px;
+}
+
+.options {
+  margin: 10px 0;
+}
+.timer-form {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+/* LEFT */
+.timer-box {
+  width: 40%;
+}
+
+/* RIGHT */
+.form-box {
+  width: 60%;
+}
+
+button {
+  padding: 6px 14px;
+  margin-top: 10px;
+  margin-right: 8px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0b5ed7;
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 6px;
+  margin: 5px 0;
+}
+
+.form-box textarea {
+  height: 80px;
+}
+
+.options {
+  margin: 10px 0;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
+
+button {
+  padding: 6px 14px;
+  margin-top: 10px;
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0b5ed7;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.success {
+  color: green;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+}

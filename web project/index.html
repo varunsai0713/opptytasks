@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <h1>Interactive Web Project</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Dynamic</a>
+    <a href="#">Timer</a>
+    <a href="#">Contact Form</a>
+  </nav>
+</header>
+
+<!-- ABOUT SECTION -->
+<section class="section about">
+  <div class="about-left">
+    <h2>About This Project</h2>
+    <p>
+      This is a sample interactive web page built using HTML and JavaScript.
+      It features dynamic content manipulation, form validation, and local storage.
+    </p>
+
+    <h3>Features Demonstrated:</h3>
+    <ul>
+      <li>DOM manipulation</li>
+      <li>Form validation</li>
+      <li>Event handling</li>
+      <li>Dynamic content updates</li>
+      <li>Local storage</li>
+    </ul>
+  </div>
+
+  <div class="about-right">
+    <iframe
+      src="https://www.google.com/maps?q=108/43%20Vijaya%20Lakshmi%20Enclave%20Hyderabad&output=embed">
+    </iframe>
+    <button onclick="openMap()">Toggle Map</button>
+  </div>
+</section>
+
+<!-- TODO LIST ONLY -->
+<section class="section">
+  <h2>Interactive To-Do List</h2>
+
+  <div class="todo-input">
+    <input type="text" id="taskInput" placeholder="New Task...">
+    <button onclick="addTask()">Add</button>
+  </div>
+
+  <ul id="taskList"></ul>
+
+  <div class="note">
+    Tasks are saved in your browser's local storage.
+  </div>
+
+  <button onclick="clearAllTasks()">Clear All Tasks</button>
+</section>
+
+<!-- 🔥 TIMER (LEFT) + FORM (RIGHT) -->
+<section class="section timer-form">
+
+  <!-- TIMER -->
+  <div class="timer-box">
+    <h2>Auto-Updating Timer</h2>
+    <p>This counter auto-updates every second:</p>
+
+    <div class="timer-display" id="timeDisplay">
+      Time elapsed: 00:00:00
+    </div>
+
+    <button onclick="pauseTimer()">Pause Timer</button>
+    <button onclick="resetTimer()">Reset Timer</button>
+  </div>
+
+  <!-- CONTACT FORM -->
+  <div class="form-box">
+    <h2>Contact Form</h2>
+    <p>Send me a message:</p>
+
+    <form id="contactForm" onsubmit="return submitForm()">
+
+      <label>Name:</label>
+      <input type="text" id="name">
+      <span class="error" id="nameError"></span>
+
+      <label>Email:</label>
+      <input type="email" id="email">
+      <span class="error" id="emailError"></span>
+
+      <label>Password:</label>
+      <input type="password" id="password">
+      <span class="error" id="passwordError"></span>
+
+      <label>Message:</label>
+      <textarea></textarea>
+
+      <button type="submit">Submit</button>
+      <button type="button" onclick="clearForm()">Clear Data</button>
+
+      <p class="success" id="successMsg"></p>
+    </form>
+  </div>
+
+</section>
+
+<!-- EXTRA MAP -->
+<section class="section">
+  <h2>Feat Sessions & Videos</h2>
+  <iframe
+    src="https://www.google.com/maps?q=108/43%20Vijaya%20Lakshmi%20Enclave%20Hyderabad&output=embed">
+  </iframe>
+  <button onclick="openMap()">Toggle Map</button>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  © 2024 Interactive Web Project | Your email: user@example.com
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
