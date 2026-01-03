@@ -1,13 +1,9 @@
+let mapVisible = true;
 
-function openMap() {
-  const address =
-    "108/43 Vijaya Lakshmi Enclave 1st Floor H No 2 PJR Enclave Rd Gangaram ICRISAT Colony Hyderabad Telangana 500050";
-
-  const url =
-    "https://www.google.com/maps/search/?api=1&query=" +
-    encodeURIComponent(address);
-
-  window.open(url, "_blank");
+function toggleMap() {
+  const map = document.getElementById("map");
+  map.style.display = mapVisible ? "none" : "block";
+  mapVisible = !mapVisible;
 }
 
 
@@ -17,6 +13,7 @@ let tasks = [];
 function addTask() {
   const input = document.getElementById("taskInput");
   if (input.value.trim() === "") return;
+
   tasks.push(input.value);
   input.value = "";
   renderTasks();
@@ -25,15 +22,18 @@ function addTask() {
 function renderTasks() {
   const list = document.getElementById("taskList");
   list.innerHTML = "";
+
   tasks.forEach((task, i) => {
     const li = document.createElement("li");
-    li.textContent = task;
+    li.textContent = task + " ";
+
     const btn = document.createElement("button");
     btn.textContent = "Remove";
     btn.onclick = () => {
       tasks.splice(i, 1);
       renderTasks();
     };
+
     li.appendChild(btn);
     list.appendChild(li);
   });
@@ -51,16 +51,26 @@ let running = true;
 setInterval(() => {
   if (running) {
     seconds++;
-    updateTimer();
+    updateTimers();
   }
 }, 1000);
 
-function updateTimer() {
+function updateTimers() {
   const h = String(Math.floor(seconds / 3600)).padStart(2, "0");
   const m = String(Math.floor((seconds % 3600) / 60)).padStart(2, "0");
   const s = String(seconds % 60).padStart(2, "0");
-  document.getElementById("timeDisplay").innerText =
-    `Time elapsed: ${h}:${m}:${s}`;
+
+  
+  const t1 = document.getElementById("timeDisplay");
+  if (t1) {
+    t1.innerText = `Time elapsed: ${h}:${m}:${s}`;
+  }
+
+  
+  const t2 = document.getElementById("timeDisplay2");
+  if (t2) {
+    t2.innerText = `Time elapsed: ${h}:${m}:${s}`;
+  }
 }
 
 function pauseTimer() {
@@ -69,19 +79,21 @@ function pauseTimer() {
 
 function resetTimer() {
   seconds = 0;
-  updateTimer();
+  updateTimers();
 }
 
 
 function submitForm() {
   let valid = true;
+
   document.getElementById("nameError").innerText = "";
   document.getElementById("emailError").innerText = "";
   document.getElementById("passwordError").innerText = "";
   document.getElementById("successMsg").innerText = "";
 
   if (document.getElementById("name").value === "") {
-    document.getElementById("nameError").innerText = "Please enter your name.";
+    document.getElementById("nameError").innerText =
+      "Please enter your name.";
     valid = false;
   }
 
@@ -109,3 +121,15 @@ function clearForm() {
   document.getElementById("contactForm").reset();
   document.getElementById("successMsg").innerText = "";
 }
+function openMap() {
+
+                        const address = "108/43 Vijaya Lakshmi Enclave 1st Floor H No 2 PJR Enclave Rd Gangaram ICRISAT Colony Hyderabad Telangana 500050";
+
+
+                        const mapURL =
+                            "https://www.google.com/maps/search/?api=1&query=" +
+                            encodeURIComponent(address);
+
+
+                        window.open(mapURL, "_blank");
+                    }

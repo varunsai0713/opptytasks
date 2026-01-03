@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
@@ -9,8 +10,9 @@ h1, h2, h3 {
   margin-bottom: 10px;
 }
 
+
 .header {
-  background: #fff;
+  background: #ffffff;
   padding: 20px;
   text-align: center;
   border-bottom: 1px solid #ccc;
@@ -22,11 +24,27 @@ h1, h2, h3 {
   text-decoration: underline;
 }
 
+
 .section {
-  background: #fff;
+  background: #ffffff;
   padding: 20px;
   margin-top: 30px;
   border: 1px solid #ddd;
+}
+.hero-right {
+  flex: 1;                   
+  text-align: center;
+}
+
+.hero-right iframe {
+  width: 100%;
+  height: 220px;
+  border: 1px solid #ccc;
+}
+
+.hero-right button {
+  margin-top: 10px;
+  padding: 6px 14px;
 }
 
 .about {
@@ -49,13 +67,15 @@ iframe {
   border: 1px solid #ccc;
 }
 
-.two-column {
+
+.todo-timer {
   display: flex;
   gap: 40px;
 }
 
-.box {
-  width: 50%;
+
+.todo-box {
+  width: 60%;
 }
 
 .todo-input {
@@ -74,40 +94,41 @@ iframe {
   margin: 10px 0;
 }
 
-.timer-display {
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.contact {
-  width: 50%;
-}
-
-.contact input,
-.contact textarea {
-  width: 100%;
-  margin: 5px 0;
-  padding: 6px;
-}
-
-.options {
-  margin: 10px 0;
-}
-.timer-form {
-  display: flex;
-  gap: 50px;
-  margin-top: 30px;
-}
-
 
 .timer-box {
   width: 40%;
 }
 
+.timer-display {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+
+.timer-form {
+  display: flex;
+  gap: 40px;
+}
 
 .form-box {
   width: 60%;
 }
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 6px;
+  margin: 5px 0;
+}
+
+textarea {
+  height: 80px;
+}
+
+.options {
+  margin: 10px 0;
+}
+
 
 button {
   padding: 6px 14px;
@@ -123,20 +144,6 @@ button:hover {
   background: #0b5ed7;
 }
 
-.form-box input,
-.form-box textarea {
-  width: 100%;
-  padding: 6px;
-  margin: 5px 0;
-}
-
-.form-box textarea {
-  height: 80px;
-}
-
-.options {
-  margin: 10px 0;
-}
 
 .error {
   color: red;
@@ -148,30 +155,12 @@ button:hover {
   margin-top: 10px;
 }
 
-button {
-  padding: 6px 14px;
-  margin-top: 10px;
-  background: #0d6efd;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #0b5ed7;
-}
-
-.error {
-  color: red;
-  font-size: 14px;
-}
-
-.success {
-  color: green;
-}
 
 .footer {
   text-align: center;
   margin-top: 30px;
   font-size: 14px;
+}
+.container2 img{
+  width: 500px;
 }
