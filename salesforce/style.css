@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 32px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  width: 70px;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #032d60;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+.more {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.arrow {
+  font-size: 12px;
+}
+
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 2px solid #d8dde6;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.search-icon {
+  width: 18px;
+  margin-right: 8px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 240px;
+}
+
+.search-box:focus-within {
+  border-color: #0176d3;
+}
+
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.call {
+  text-decoration: none;
+  color: #032d60;
+  font-size: 14px;
+  text-align: right;
+}
+
+.icon img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #032d60;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.login img {
+  width: 20px;
+  height: 18px;
+}
+
+
+.contact-btn {
+  background: #2e844a;
+  color: #ffffff;
+  padding: 14px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.contact-btn:hover {
+  background: #256b3c;
+}
+.promo-bar {
+  background-color: #B3125A;
+  padding: 45px;
+  cursor: pointer;
+}
+
+.promo-content {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  color: #ffffff;
+}
+
+.promo-icons img {
+  width: 130px;
+}
+
+.promo-text {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.promo-arrow img {
+  height: 30px;
+  cursor: pointer;
+}
+.hero{
+    background-color: #142D9C;
+    text-align: center;
+    padding: 20px;
+}
+.hero p{
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.hero h1{
+    color: white;
+    font-size: 45px;
+    margin: 20px;
+}
+.hero h1 strong{
+    color: #0D9DDA;
+}
+
+.hero .hero-text{
+    font-family: "saleforce-sans";
+    font-size: 20px;
+    
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px;
+    
+}
+.btn1{
+    background-color: #0176D3;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+   cursor: pointer;
+}
+.btn1:hover{
+    background-color: #0B5CAB;
+}
+.btn2{
+    background-color: #fff;
+    color: #0D9DDA;
+    padding: 15px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    margin-left: 20px;
+}
+.btn2:hover{
+    background-color: #EAF5FE;
+}
+.crm-section,
+.stats-section {
+    background: #fff;
+    padding: 90px 30px;
+    font-family: Arial, sans-serif;
+}
+
+
+.crm-container,
+.stats-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.crm-text,
+.stats-text {
+    flex: 1;
+}
+
+.crm-text h2,
+.stats-text h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #032d60;
+    margin-bottom: 20px;
+}
+
+.stats-text h2 {
+    font-size: 36px;
+}
+
+.crm-text h2 span {
+    color: #0176d3;
+}
+
+.stats-text h2 span {
+    color: #032d60;
+}
+
+.crm-text p,
+.stats-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 18px;
+}
+
+.crm-text a {
+    color: #0176d3;
+    text-decoration: none;
+}
+
+.crm-text a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    margin-top: 10px;
+}
+
+
+.crm-buttons,
+.stats-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: #0176d3;
+    color: #fff;
+    border: none;
+    padding: 14px 26px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #015eb8;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #0176d3;
+    color: #0176d3;
+    padding: 14px 26px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    background: #f0f7ff;
+}
+
+
+.crm-video,
+.stats-video {
+    flex: 1;
+    height: 320px;              
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.crm-video video,
+.stats-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+
+
+.section-four {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-four-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-four h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #032d60;
+  margin-bottom: 24px;
+  line-height: 1.3;
+}
+
+.section-four p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.section-four-btn {
+  display: inline-block;
+  background-color: #0176d3;
+  color: #ffffff;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.section-four-btn:hover {
+  background-color: #014486;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(./1-up-rainbow-blue-bg.webp) ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img4{
+    width:900px;
+    height: 800px;
+   
+}
+.section-five {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-five-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-five h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #032d60;
+  margin-bottom: 24px;
+  line-height: 1.3;
+}
+
+.section-five p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+}
